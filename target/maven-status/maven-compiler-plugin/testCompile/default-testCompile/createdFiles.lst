@@ -1,0 +1,4 @@
+helpers\DataGenerator.class
+examples\bookings\BookingsRunner.class
+examples\ExamplesTest.class
+examples\users\UsersRunner.class
