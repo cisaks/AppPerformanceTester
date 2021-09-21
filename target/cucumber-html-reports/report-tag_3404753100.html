@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Ryanair Demo Application API Test</td>
-      <td>21 Sep 2021, 21:25</td>
+      <td>22 Sep 2021, 00:06</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="557799400">0.557</td>
+          <td class="duration" data-value="508193300">0.508</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.557</span>
+  <span class="lead-duration duration">0.508</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -281,7 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.504</span>
+  <span class="lead-duration duration">0.448</span>
 
 </div>
 
@@ -299,7 +299,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
+        <pre>00:06:51.982 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 81
@@ -307,14 +307,14 @@ $(document).ready(function() {
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}
 </pre>
       </div>
     </div>
@@ -361,7 +361,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == { idBooking: &quot;#string&quot;, idUser: &quot;#(existingUser.id)&quot;, origin: &quot;#(r_origin)&quot;, destination: &quot;#(r_destination)&quot;, date: &quot;#? timeValidator(_)&quot; }</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -471,7 +471,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -489,20 +489,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>21:25:24.730 request:
-2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+        <pre>00:06:52.042 request:
+2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.737 response time in milliseconds: 7
+00:06:52.051 response time in milliseconds: 9
 2 &lt; 200
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -576,7 +576,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response[*] contains</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 

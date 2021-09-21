@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: examples.ExamplesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.427 s <<< FAILURE! - in examples.ExamplesTest
-testParallel  Time elapsed: 3.424 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.46 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 3.457 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
 Bad request: date and id empty
 classpath:examples/bookings/unclearbooking.feature:26
-status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1, response: 
+status code was: 200, expected: 500, response time in milliseconds: 5, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1, response: 
 []
 classpath:examples/bookings/unclearbooking.feature:56
 status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
-{"idBooking":"MAD-ARN-0.275751412266237","idUser":"IncorrectDateTestEmail@email.com-0.552965395665666","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
+{"idBooking":"MAD-ARN-0.3294213420245088","idUser":"IncorrectDateTestEmail@email.com-0.9501626214807845","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
 classpath:examples/bookings/unclearbooking.feature:87 ==> expected: <0> but was: <3>
 	at examples.ExamplesTest.testParallel(ExamplesTest.java:23)
 

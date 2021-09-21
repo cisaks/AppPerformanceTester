@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Ryanair Demo Application API Test</td>
-      <td>21 Sep 2021, 21:25</td>
+      <td>22 Sep 2021, 00:06</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >3</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="76184600">0.076</td>
+          <td class="duration" data-value="58483800">0.058</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name"></span>
+  <span class="name">Get booking: No parameters</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -292,7 +292,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -310,7 +310,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>21:25:24.831 request:
+        <pre>00:06:52.177 request:
 1 &gt; GET http://127.0.0.1:8900/booking
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -318,11 +318,11 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.834 response time in milliseconds: 3
+00:06:52.181 response time in milliseconds: 3
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 30
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Bad request: date and id empty
 </pre>
@@ -375,7 +375,7 @@ classpath:examples/bookings/unclearbooking.feature:26</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>21:25:24.835 classpath:examples/bookings/unclearbooking.feature:26
+        <pre>00:06:52.182 classpath:examples/bookings/unclearbooking.feature:26
 Then status 200
 status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
 Bad request: date and id empty
@@ -471,7 +471,7 @@ classpath:examples/bookings/unclearbooking.feature:26
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.007</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
@@ -587,7 +587,7 @@ classpath:examples/bookings/unclearbooking.feature:26
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -605,7 +605,7 @@ classpath:examples/bookings/unclearbooking.feature:26
           <a>Doc string</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details">
-        <pre>21:25:24.840 request:
+        <pre>00:06:52.177 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -613,11 +613,11 @@ classpath:examples/bookings/unclearbooking.feature:26
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.847 response time in milliseconds: 7
+00:06:52.182 response time in milliseconds: 5
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 []
 </pre>
       </div>
@@ -653,7 +653,7 @@ classpath:examples/bookings/unclearbooking.feature:26
           <a>status</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details  in ">
-        <pre>status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
+        <pre>status code was: 200, expected: 500, response time in milliseconds: 5, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
 []
 classpath:examples/bookings/unclearbooking.feature:56</pre>
       </div>
@@ -669,9 +669,9 @@ classpath:examples/bookings/unclearbooking.feature:56</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>21:25:24.847 classpath:examples/bookings/unclearbooking.feature:56
+        <pre>00:06:52.183 classpath:examples/bookings/unclearbooking.feature:56
 Then status 500
-status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
+status code was: 200, expected: 500, response time in milliseconds: 5, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
 []
 classpath:examples/bookings/unclearbooking.feature:56
 </pre>
@@ -738,7 +738,7 @@ classpath:examples/bookings/unclearbooking.feature:56
 </div>
 
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.045</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
@@ -813,7 +813,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="keyword indention">*</span>
   <span class="name">def user =</span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -853,7 +853,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="keyword indention">Given</span>
   <span class="name">path 'user'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -907,7 +907,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -925,22 +925,22 @@ classpath:examples/bookings/unclearbooking.feature:56
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>21:25:24.874 request:
+        <pre>00:06:52.210 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 74
+1 &gt; Content-Length: 70
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;}
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Miss Isidro Funk&quot;}
 
-21:25:24.887 response time in milliseconds: 13
+00:06:52.219 response time in milliseconds: 9
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;bookings&quot;:[]}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Miss Isidro Funk&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;bookings&quot;:[]}
 </pre>
       </div>
     </div>
@@ -988,7 +988,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="keyword indention">*</span>
   <span class="name">user.id = response.id</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1069,7 +1069,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -1087,22 +1087,22 @@ classpath:examples/bookings/unclearbooking.feature:56
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>21:25:24.893 request:
+        <pre>00:06:52.224 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 118
+2 &gt; Content-Length: 119
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2020-02-03 XXX&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2020-02-03 XXX&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.900 response time in milliseconds: 7
+00:06:52.231 response time in milliseconds: 7
 2 &lt; 201
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.3294213420245088&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 </pre>
       </div>
     </div>
@@ -1138,7 +1138,7 @@ classpath:examples/bookings/unclearbooking.feature:56
       </div>
       <div id="msg-16" class="collapse collapsable-details  in ">
         <pre>status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
-{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.3294213420245088&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 classpath:examples/bookings/unclearbooking.feature:87</pre>
       </div>
     </div>
@@ -1153,10 +1153,10 @@ classpath:examples/bookings/unclearbooking.feature:87</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>21:25:24.900 classpath:examples/bookings/unclearbooking.feature:87
+        <pre>00:06:52.232 classpath:examples/bookings/unclearbooking.feature:87
 Then status 400
 status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
-{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.3294213420245088&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 classpath:examples/bookings/unclearbooking.feature:87
 </pre>
       </div>

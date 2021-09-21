@@ -6,7 +6,7 @@ Background: Define URL
 
 
 @UnclearBooking @UnclearGetBookingNullParameters
-Scenario:
+Scenario: Get booking: No parameters
     ## Current API behaviour is to return status: 400, with message "Bad request: date and id empty"
     ## when no User ID or Booking Date is provided
     ##

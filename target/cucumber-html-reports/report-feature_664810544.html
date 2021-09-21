@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Ryanair Demo Application API Test</td>
-      <td>21 Sep 2021, 21:25</td>
+      <td>22 Sep 2021, 00:06</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">21</td>
 
-          <td class="duration" data-value="3301646700">3.301</td>
+          <td class="duration" data-value="3232108600">3.232</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.034</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>21:25:24.136 karate.env system property was: null 
+        <pre>00:06:51.503 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -418,7 +418,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.557</span>
+  <span class="lead-duration duration">0.508</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -518,7 +518,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.504</span>
+  <span class="lead-duration duration">0.448</span>
 
 </div>
 
@@ -536,7 +536,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
+        <pre>00:06:51.982 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 81
@@ -544,14 +544,14 @@ $(document).ready(function() {
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}
 </pre>
       </div>
     </div>
@@ -598,7 +598,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == { idBooking: &quot;#string&quot;, idUser: &quot;#(existingUser.id)&quot;, origin: &quot;#(r_origin)&quot;, destination: &quot;#(r_destination)&quot;, date: &quot;#? timeValidator(_)&quot; }</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -708,7 +708,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -726,20 +726,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>21:25:24.730 request:
-2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+        <pre>00:06:52.042 request:
+2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.737 response time in milliseconds: 7
+00:06:52.051 response time in milliseconds: 9
 2 &lt; 200
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -813,7 +813,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response[*] contains</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -867,7 +867,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.035</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
@@ -910,7 +910,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -928,7 +928,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>21:25:24.136 karate.env system property was: null 
+        <pre>00:06:51.503 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -1029,7 +1029,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1096,7 +1096,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.556</span>
+  <span class="lead-duration duration">0.498</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
@@ -1140,7 +1140,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def user =</span>
 
-  <span class="lead-duration duration">0.244</span>
+  <span class="lead-duration duration">0.176</span>
 
 </div>
 
@@ -1207,7 +1207,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request user</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1234,7 +1234,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.277</span>
+  <span class="lead-duration duration">0.288</span>
 
 </div>
 
@@ -1252,22 +1252,22 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
+        <pre>00:06:51.982 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 58
+1 &gt; Content-Length: 53
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;}
+{&quot;email&quot;:&quot;guy449@email.com&quot;,&quot;name&quot;:&quot;Chris Lemke PhD&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;bookings&quot;:[]}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;email&quot;:&quot;guy449@email.com&quot;,&quot;name&quot;:&quot;Chris Lemke PhD&quot;,&quot;id&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;bookings&quot;:[]}
 </pre>
       </div>
     </div>
@@ -1440,7 +1440,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -1458,22 +1458,22 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>21:25:24.713 request:
+        <pre>00:06:52.024 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 102
+2 &gt; Content-Length: 99
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;id&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;}
 
-21:25:24.718 response time in milliseconds: 5
+00:06:52.029 response time in milliseconds: 4
 2 &lt; 201
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;FLC-IPR-0.8546619467702057&quot;,&quot;idUser&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}
 </pre>
       </div>
     </div>
@@ -1631,7 +1631,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -1649,20 +1649,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>21:25:24.731 request:
-3 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=jordon893%40email.com-0.9991404549854458
+        <pre>00:06:52.041 request:
+3 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=guy449%40email.com-0.7247712191432245
 3 &gt; Host: 127.0.0.1:8900
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.737 response time in milliseconds: 6
+00:06:52.046 response time in milliseconds: 5
 3 &lt; 200
 3 &lt; Content-Type: application/json;charset=UTF-8
 3 &lt; Transfer-Encoding: chunked
-3 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+3 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;FLC-IPR-0.8546619467702057&quot;,&quot;idUser&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -1709,7 +1709,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == &quot;#array&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1736,7 +1736,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response[*] contains</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1790,7 +1790,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.035</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
@@ -1833,7 +1833,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -1851,7 +1851,476 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details">
-        <pre>21:25:24.136 karate.env system property was: null 
+        <pre>00:06:51.503 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1906757762.html">@GetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.488</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Filter by user&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: null }</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.449</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?id=pepe%40pepe.pe1-0.1
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.016 response time in milliseconds: 33
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == &quot;#array&quot;</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.034</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>00:06:51.503 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -2019,14 +2488,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.543</span>
+  <span class="lead-duration duration">0.487</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Filter by user&quot;</span>
+  <span class="name">Get booking: &quot;Filter by date&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -2035,14 +2504,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2054,13 +2523,482 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details ">
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: null }</span>
+  <span class="name">params { id: null, date: #(currentDate) }</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.451</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.016 response time in milliseconds: 33
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KHF-RJB-0.02857701766733378&quot;,&quot;idUser&quot;:&quot;rickie365@email.com-0.49065220791007613&quot;,&quot;origin&quot;:&quot;KHF&quot;,&quot;destination&quot;:&quot;RJB&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == &quot;#array&quot;</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.034</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-32" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>00:06:51.503 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1906757762.html">@GetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.485</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Filter by user &amp; date&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: #(currentDate) }</span>
 
   <span class="lead-duration duration">0.017</span>
 
@@ -2116,945 +3054,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.506</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-25" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?id=pepe%40pepe.pe1-0.1
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.705 response time in milliseconds: 34
-1 &lt; 200
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;#array&quot;</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
-
-  <span class="lead-duration duration">0.010</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.033</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-26" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-27" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-28" class="collapse collapsable-details">
-        <pre>21:25:24.136 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.013</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1906757762.html">@GetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.545</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Filter by date&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-29" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-30" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: null, date: #(currentDate) }</span>
-
-  <span class="lead-duration duration">0.014</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.509</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-31" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.705 response time in milliseconds: 34
-1 &lt; 200
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;ASR-MMR-0.4448515920323687&quot;,&quot;idUser&quot;:&quot;ismael507@email.com-0.3334483977546764&quot;,&quot;origin&quot;:&quot;ASR&quot;,&quot;destination&quot;:&quot;MMR&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;#array&quot;</span>
-
-  <span class="lead-duration duration">0.009</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.033</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-32">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-32" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-33" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-34" class="collapse collapsable-details">
-        <pre>21:25:24.136 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.013</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1906757762.html">@GetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.544</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Filter by user &amp; date&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-35" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-36" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: #(currentDate) }</span>
-
-  <span class="lead-duration duration">0.018</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.505</span>
+  <span class="lead-duration duration">0.449</span>
 
 </div>
 
@@ -3072,20 +3072,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-37" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+        <pre>00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -3132,7 +3132,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == &quot;#array&quot;</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -3159,7 +3159,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -3197,7 +3197,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
@@ -3240,7 +3240,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -3258,2222 +3258,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-40" class="collapse collapsable-details">
-        <pre>21:25:24.736 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.006</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Empty date and id&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-41" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-42" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: null, date: null }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-43" class="collapse collapsable-details">
-        <pre>21:25:24.743 request:
-1 &gt; GET http://127.0.0.1:8900/booking
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.747 response time in milliseconds: 4
-1 &lt; 400
-1 &lt; Content-Type: text/plain;charset=UTF-8
-1 &lt; Content-Length: 30
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-Bad request: date and id empty
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 400</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;Bad request: date and id empty&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.004</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-44">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-44" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-45" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-46" class="collapse collapsable-details">
-        <pre>21:25:24.736 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.027</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Incorrect date: ABCD-09-19&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-47" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-48" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;ABCD-09-19&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.026</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-49" class="collapse collapsable-details">
-        <pre>21:25:24.743 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=ABCD-09-19&amp;id=pepe%40pepe.pe1-0.1
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.768 response time in milliseconds: 25
-1 &lt; 500
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.767+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 500</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.005</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-50">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-50" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-51" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-52" class="collapse collapsable-details">
-        <pre>21:25:24.736 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.074</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Incorrect date: 2021-0ABC9-19&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-53" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-54" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-0ABC9-19&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.072</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-55" class="collapse collapsable-details">
-        <pre>21:25:24.747 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-0ABC9-19&amp;id=pepe%40pepe.pe1-0.1
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.818 response time in milliseconds: 71
-1 &lt; 500
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.816+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 500</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.005</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-56">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-56" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-57">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-57" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-58" class="collapse collapsable-details">
-        <pre>21:25:24.748 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.029</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-59">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Incorrect date: 2021-09-xyz19&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-59" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-60">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-60" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-xyz19&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.028</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-61" class="collapse collapsable-details">
-        <pre>21:25:24.760 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-xyz19&amp;id=pepe%40pepe.pe1-0.1
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.784 response time in milliseconds: 24
-1 &lt; 500
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.781+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 500</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.004</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-62">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-62" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-63">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-63" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-64" class="collapse collapsable-details">
-        <pre>21:25:24.748 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.055</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-65">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Incorrect date: 2021-09-31&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-65" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-66">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-66" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-31&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.054</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-67">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-67" class="collapse collapsable-details">
-        <pre>21:25:24.756 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-31&amp;id=pepe%40pepe.pe1-0.1
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.808 response time in milliseconds: 52
-1 &lt; 500
-1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.806+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 500</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.002</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-68">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-68" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-69">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-69" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-70">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-70" class="collapse collapsable-details">
-        <pre>21:25:24.754 karate.env system property was: null 
+        <pre>00:06:52.049 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -5644,11 +3429,11 @@ Bad request: date and id empty
   <span class="lead-duration duration">0.016</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-71">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get booking: &quot;Incorrect date: 2021-13-15&quot;</span>
+  <span class="name">Get booking: &quot;Empty date and id&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -5657,14 +3442,14 @@ Bad request: date and id empty
   </span>
   <div class="description indention"></div>
 
-  <div id="element-71" class="collapse collapsable-details ">
+  <div id="element-41" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-72">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -5676,15 +3461,458 @@ Bad request: date and id empty
 
   </div>
 
-  <div id="steps-72" class="inner-level collapse collapsable-details ">
+  <div id="steps-42" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-13-15&quot; }</span>
+  <span class="name">params { id: null, date: null }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>00:06:52.065 request:
+1 &gt; GET http://127.0.0.1:8900/booking
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.074 response time in milliseconds: 9
+1 &lt; 400
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 30
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+Bad request: date and id empty
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == &quot;Bad request: date and id empty&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.007</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-44" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>00:06:52.048 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
 
   <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.130</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Incorrect date: ABCD-09-19&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-47" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-48" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;ABCD-09-19&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -5738,7 +3966,7 @@ Bad request: date and id empty
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.129</span>
 
 </div>
 
@@ -5752,25 +3980,1354 @@ Bad request: date and id empty
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
           <a>Doc string</a>
       </div>
-      <div id="msg-73" class="collapse collapsable-details">
-        <pre>21:25:24.760 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-13-15&amp;id=pepe%40pepe.pe1-0.1
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>00:06:52.062 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=ABCD-09-19&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.772 response time in milliseconds: 12
+00:06:52.187 response time in milliseconds: 125
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.771+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.185+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.008</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-50">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-50" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>00:06:52.048 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.040</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Incorrect date: 2021-0ABC9-19&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-54" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-0ABC9-19&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>00:06:52.061 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-0ABC9-19&amp;id=pepe%40pepe.pe1-0.1
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.098 response time in milliseconds: 37
+1 &lt; 500
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.097+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.008</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-56">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-56" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-57">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>00:06:52.059 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.085</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Incorrect date: 2021-09-xyz19&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-59" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-60">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-60" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-xyz19&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.084</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-61" class="collapse collapsable-details">
+        <pre>00:06:52.071 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-xyz19&amp;id=pepe%40pepe.pe1-0.1
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.153 response time in milliseconds: 82
+1 &lt; 500
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.152+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.007</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-62">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-62" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-63">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-63" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>00:06:52.071 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.034</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-65">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Incorrect date: 2021-09-31&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-65" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-66" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-31&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.033</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-67">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-67" class="collapse collapsable-details">
+        <pre>00:06:52.082 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-31&amp;id=pepe%40pepe.pe1-0.1
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.113 response time in milliseconds: 30
+1 &lt; 500
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.111+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </pre>
       </div>
     </div>
@@ -5858,7 +5415,7 @@ Bad request: date and id empty
   <span class="lead-duration duration">0.002</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-74">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-68">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -5871,14 +5428,14 @@ Bad request: date and id empty
   </span>
   <div class="description indention"></div>
 
-  <div id="element-74" class="collapse collapsable-details ">
+  <div id="element-68" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-69">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -5890,7 +5447,7 @@ Bad request: date and id empty
 
   </div>
 
-  <div id="steps-75" class="inner-level collapse collapsable-details ">
+  <div id="steps-69" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -5912,11 +5469,11 @@ Bad request: date and id empty
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-70">
           <a>Doc string</a>
       </div>
-      <div id="msg-76" class="collapse collapsable-details">
-        <pre>21:25:24.774 karate.env system property was: null 
+      <div id="msg-70" class="collapse collapsable-details">
+        <pre>00:06:52.080 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -6084,7 +5641,450 @@ Bad request: date and id empty
 </div>
 
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.019</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-71">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get booking: &quot;Incorrect date: 2021-13-15&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-71" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-72">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-72" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-13-15&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>00:06:52.086 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-13-15&amp;id=pepe%40pepe.pe1-0.1
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:06:52.102 response time in milliseconds: 16
+1 &lt; 500
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.100+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-74">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-74" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-76" class="collapse collapsable-details">
+        <pre>00:06:52.104 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2662816407.html">@NegativeGetBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.009</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-77">
@@ -6199,7 +6199,7 @@ Bad request: date and id empty
           <a>Doc string</a>
       </div>
       <div id="msg-79" class="collapse collapsable-details">
-        <pre>21:25:24.779 request:
+        <pre>00:06:52.110 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -6207,11 +6207,11 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.784 response time in milliseconds: 4
+00:06:52.116 response time in milliseconds: 5
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 []
 </pre>
       </div>
@@ -6358,7 +6358,897 @@ Bad request: date and id empty
           <a>Doc string</a>
       </div>
       <div id="msg-82" class="collapse collapsable-details">
-        <pre>21:25:24.778 karate.env system property was: null 
+        <pre>00:06:52.107 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1754516419.html">@NegativePostBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.011</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-83">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Post booking: &quot;No user id&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-83" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-84">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-84" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: &quot;#(currentDate)&quot;, destination: &quot;ARN&quot;, id: null, origin: &quot;MAD&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>00:06:52.114 request:
+1 &gt; POST http://127.0.0.1:8900/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 66
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
+
+00:06:52.121 response time in milliseconds: 7
+1 &lt; 400
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 23
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+User id should be valid
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains &quot;User id should be valid&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-86">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-86" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-87">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-87" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>00:06:52.117 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1754516419.html">@NegativePostBooking</a>
+</div>
+
+
+  <span class="lead-duration duration">0.013</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-89">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Post booking: &quot;No date&quot;</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-89" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-90">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-90" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'booking'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: null, destination: &quot;ARN&quot;, id: &quot;#(existingUser.id)&quot;, origin: &quot;MAD&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-91" class="collapse collapsable-details">
+        <pre>00:06:52.127 request:
+1 &gt; POST http://127.0.0.1:8900/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: 127.0.0.1:8900
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:null,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+
+00:06:52.137 response time in milliseconds: 10
+1 &lt; 400
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 21
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 &lt; Connection: close
+Date format not valid
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains &quot;Date format not valid&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-92">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-92" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-93">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-93" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-94">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-94" class="collapse collapsable-details">
+        <pre>00:06:52.124 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -6529,896 +7419,6 @@ Bad request: date and id empty
   <span class="lead-duration duration">0.010</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-83">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Post booking: &quot;No user id&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-83" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-84">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-84" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request { date: &quot;#(currentDate)&quot;, destination: &quot;ARN&quot;, id: null, origin: &quot;MAD&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Post</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-85" class="collapse collapsable-details">
-        <pre>21:25:24.787 request:
-1 &gt; POST http://127.0.0.1:8900/booking
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 66
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
-
-21:25:24.792 response time in milliseconds: 5
-1 &lt; 400
-1 &lt; Content-Type: text/plain;charset=UTF-8
-1 &lt; Content-Length: 23
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-User id should be valid
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 400</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response contains &quot;User id should be valid&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.002</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-86">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-86" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-87">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-87" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-88" class="collapse collapsable-details">
-        <pre>21:25:24.791 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1754516419.html">@NegativePostBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.006</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-89">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Post booking: &quot;No date&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-89" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-90">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-90" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request { date: null, destination: &quot;ARN&quot;, id: &quot;#(existingUser.id)&quot;, origin: &quot;MAD&quot; }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Post</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-91" class="collapse collapsable-details">
-        <pre>21:25:24.796 request:
-1 &gt; POST http://127.0.0.1:8900/booking
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 73
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:null,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
-
-21:25:24.800 response time in milliseconds: 4
-1 &lt; 400
-1 &lt; Content-Type: text/plain;charset=UTF-8
-1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-Date format not valid
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 400</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response contains &quot;Date format not valid&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.003</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-92">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-92" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-93">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-93" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-94">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-94" class="collapse collapsable-details">
-        <pre>21:25:24.794 karate.env system property was: null 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def currentDate = dataGenerator.getCurrentDate()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_destination = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def r_origin = dataGenerator.getRandomAirport()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url apiURL</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1754516419.html">@NegativePostBooking</a>
-</div>
-
-
-  <span class="lead-duration duration">0.007</span>
-
-
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-95">
 
 <div class="brief passed">
@@ -7513,7 +7513,7 @@ Date format not valid
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -7531,7 +7531,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-97" class="collapse collapsable-details">
-        <pre>21:25:24.800 request:
+        <pre>00:06:52.130 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
@@ -7541,11 +7541,11 @@ Date format not valid
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:null,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.804 response time in milliseconds: 4
+00:06:52.138 response time in milliseconds: 7
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Date format not valid
 </pre>
@@ -7632,7 +7632,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-98">
@@ -7675,7 +7675,7 @@ Date format not valid
   <span class="keyword indention">*</span>
   <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -7693,7 +7693,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-100" class="collapse collapsable-details">
-        <pre>21:25:24.797 karate.env system property was: null 
+        <pre>00:06:52.128 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -7861,7 +7861,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.088</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-101">
@@ -7958,7 +7958,7 @@ Date format not valid
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.087</span>
 
 </div>
 
@@ -7976,7 +7976,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-103" class="collapse collapsable-details">
-        <pre>21:25:24.802 request:
+        <pre>00:06:52.136 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 84
@@ -7986,11 +7986,11 @@ Date format not valid
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:&quot;20ABC20-04-08&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.831 response time in milliseconds: 27
+00:06:52.223 response time in milliseconds: 86
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Date format not valid
 </pre>
@@ -8138,7 +8138,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-106" class="collapse collapsable-details">
-        <pre>21:25:24.805 karate.env system property was: null 
+        <pre>00:06:52.144 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -8306,7 +8306,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.011</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-107">
@@ -8421,7 +8421,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-109" class="collapse collapsable-details">
-        <pre>21:25:24.810 request:
+        <pre>00:06:52.148 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 80
@@ -8429,15 +8429,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:null,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:null,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.820 response time in milliseconds: 10
+00:06:52.158 response time in milliseconds: 10
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.818+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.157+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </pre>
       </div>
     </div>
@@ -8522,7 +8522,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-110">
@@ -8583,7 +8583,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-112" class="collapse collapsable-details">
-        <pre>21:25:24.809 karate.env system property was: null 
+        <pre>00:06:52.144 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -8751,7 +8751,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.010</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-113">
@@ -8848,7 +8848,7 @@ Date format not valid
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -8866,7 +8866,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-115" class="collapse collapsable-details">
-        <pre>21:25:24.813 request:
+        <pre>00:06:52.148 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 80
@@ -8874,15 +8874,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:null}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:null}
 
-21:25:24.824 response time in milliseconds: 11
+00:06:52.157 response time in milliseconds: 9
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.822+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.156+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </pre>
       </div>
     </div>
@@ -8967,7 +8967,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-116">
@@ -9028,7 +9028,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-118" class="collapse collapsable-details">
-        <pre>21:25:24.813 karate.env system property was: null 
+        <pre>00:06:52.158 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -9196,7 +9196,7 @@ Date format not valid
 </div>
 
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.022</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-119">
@@ -9293,7 +9293,7 @@ Date format not valid
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -9311,7 +9311,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-121" class="collapse collapsable-details">
-        <pre>21:25:24.817 request:
+        <pre>00:06:52.162 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 73
@@ -9319,15 +9319,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;XYZXYZXYZ&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;XYZXYZXYZ&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.835 response time in milliseconds: 18
+00:06:52.182 response time in milliseconds: 20
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.833+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) ('XYZXYZXYZ')\&quot;; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.181+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) ('XYZXYZXYZ')\&quot;; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </pre>
       </div>
     </div>
@@ -9473,7 +9473,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-124" class="collapse collapsable-details">
-        <pre>21:25:24.823 karate.env system property was: null 
+        <pre>00:06:52.161 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -9756,7 +9756,7 @@ Date format not valid
           <a>Doc string</a>
       </div>
       <div id="msg-127" class="collapse collapsable-details">
-        <pre>21:25:24.829 request:
+        <pre>00:06:52.166 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 82
@@ -9764,13 +9764,13 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ABBA&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ABBA&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.832 response time in milliseconds: 3
+00:06:52.169 response time in milliseconds: 2
 1 &lt; 409
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 66
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
 </pre>
       </div>
@@ -9818,7 +9818,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
   <span class="keyword indention">And</span>
   <span class="name">match response contains &quot;Origin or Destination is not a IATA code (Three Uppercase Letters)&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -9856,7 +9856,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-128">
@@ -9917,7 +9917,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
           <a>Doc string</a>
       </div>
       <div id="msg-130" class="collapse collapsable-details">
-        <pre>21:25:24.824 karate.env system property was: null 
+        <pre>00:06:52.161 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -10085,7 +10085,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 </div>
 
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.005</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-131">
@@ -10182,7 +10182,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -10200,7 +10200,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
           <a>Doc string</a>
       </div>
       <div id="msg-133" class="collapse collapsable-details">
-        <pre>21:25:24.829 request:
+        <pre>00:06:52.166 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 84
@@ -10208,13 +10208,13 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MADRID&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MADRID&quot;}
 
-21:25:24.832 response time in milliseconds: 3
+00:06:52.169 response time in milliseconds: 2
 1 &lt; 409
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 66
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
 </pre>
       </div>

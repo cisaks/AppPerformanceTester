@@ -1,19 +1,19 @@
-21:25:23.491 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-21:25:23.498 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
-21:25:24.135 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.135 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.135 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.135 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.135 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.668 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking?date=2021-09-21
+00:06:50.853 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:06:50.861 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+00:06:51.501 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:51.501 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:51.501 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:51.501 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:51.501 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:51.982 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking?date=2021-09-22&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.668 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+00:06:51.982 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -21,15 +21,25 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.668 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking?date=2021-09-21&id=pepe%40pepe.pe1-0.1
+00:06:51.982 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking?date=2021-09-22
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.669 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+00:06:51.982 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"email":"guy449@email.com","name":"Chris Lemke PhD"}
+
+00:06:51.982 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 81
@@ -37,112 +47,87 @@
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"OTJ","id":"pepe@pepe.pe1-0.1","origin":"LMA"}
+{"date":"2021-09-22","destination":"EUV","id":"pepe@pepe.pe1-0.1","origin":"KQD"}
 
-21:25:24.669 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/user
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 58
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-{"email":"jordon893@email.com","name":"Tanya Greenfelder"}
-
-21:25:24.704 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 34
+00:06:52.016 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 33
 1 < 201
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"}
-21:25:24.705 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 34
-1 < 200
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"ASR-MMR-0.4448515920323687","idUser":"ismael507@email.com-0.3334483977546764","origin":"ASR","destination":"MMR","date":"2021-09-21"}]
-21:25:24.704 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"email":"guy449@email.com","name":"Chris Lemke PhD","id":"guy449@email.com-0.7247712191432245","bookings":[]}
+00:06:52.016 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 33
 1 < 201
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"email":"jordon893@email.com","name":"Tanya Greenfelder","id":"jordon893@email.com-0.9991404549854458","bookings":[]}
-21:25:24.704 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"idBooking":"KQD-EUV-0.8488945011404617","idUser":"pepe@pepe.pe1-0.1","origin":"KQD","destination":"EUV","date":"2021-09-22"}
+00:06:52.016 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 33
 1 < 200
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"}]
-21:25:24.704 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"},{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"}]
+00:06:52.016 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 33
 1 < 200
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"}]
-21:25:24.712 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"},{"idBooking":"KHF-RJB-0.02857701766733378","idUser":"rickie365@email.com-0.49065220791007613","origin":"KHF","destination":"RJB","date":"2021-09-22"}]
+00:06:52.016 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"}]
+00:06:52.023 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 2 > POST http://127.0.0.1:8900/booking
 2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 102
+2 > Content-Length: 99
 2 > Host: 127.0.0.1:8900
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"PRI","id":"jordon893@email.com-0.9991404549854458","origin":"TCR"}
+{"date":"2021-09-22","destination":"IPR","id":"guy449@email.com-0.7247712191432245","origin":"FLC"}
 
-21:25:24.718 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 5
+00:06:52.028 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4
 2 < 201
 2 < Content-Type: application/json;charset=UTF-8
 2 < Transfer-Encoding: chunked
-2 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"idBooking":"TCR-PRI-0.6645788937119067","idUser":"jordon893@email.com-0.9991404549854458","origin":"TCR","destination":"PRI","date":"2021-09-21"}
-21:25:24.730 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > GET http://127.0.0.1:8900/booking?date=2021-09-21&id=pepe%40pepe.pe1-0.1
-2 > Host: 127.0.0.1:8900
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-2 > Accept-Encoding: gzip,deflate
-
-
-21:25:24.730 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-3 > GET http://127.0.0.1:8900/booking?date=2021-09-21&id=jordon893%40email.com-0.9991404549854458
+2 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"idBooking":"FLC-IPR-0.8546619467702057","idUser":"guy449@email.com-0.7247712191432245","origin":"FLC","destination":"IPR","date":"2021-09-22"}
+00:06:52.040 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+3 > GET http://127.0.0.1:8900/booking?date=2021-09-22&id=guy449%40email.com-0.7247712191432245
 3 > Host: 127.0.0.1:8900
 3 > Connection: Keep-Alive
 3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 3 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.735 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.736 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.736 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.737 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+00:06:52.042 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET http://127.0.0.1:8900/booking?date=2021-09-22&id=pepe%40pepe.pe1-0.1
+2 > Host: 127.0.0.1:8900
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:06:52.046 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 5
 3 < 200
 3 < Content-Type: application/json;charset=UTF-8
 3 < Transfer-Encoding: chunked
-3 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"idBooking":"TCR-PRI-0.6645788937119067","idUser":"jordon893@email.com-0.9991404549854458","origin":"TCR","destination":"PRI","date":"2021-09-21"}]
-21:25:24.737 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 7
+3 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"idBooking":"FLC-IPR-0.8546619467702057","idUser":"guy449@email.com-0.7247712191432245","origin":"FLC","destination":"IPR","date":"2021-09-22"}]
+00:06:52.048 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.048 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.048 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.051 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 9
 2 < 200
 2 < Content-Type: application/json;charset=UTF-8
 2 < Transfer-Encoding: chunked
-2 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"}]
-21:25:24.743 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-
-
-21:25:24.743 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking?date=ABCD-09-19&id=pepe%40pepe.pe1-0.1
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-
-
-21:25:24.747 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"},{"idBooking":"KQD-EUV-0.8488945011404617","idUser":"pepe@pepe.pe1-0.1","origin":"KQD","destination":"EUV","date":"2021-09-22"}]
+00:06:52.059 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.061 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?date=2021-0ABC9-19&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -150,25 +135,24 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.747 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 4
-1 < 400
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 30
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-Bad request: date and id empty
-21:25:24.748 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.748 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.753 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.756 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking?date=2021-09-31&id=pepe%40pepe.pe1-0.1
+00:06:52.059 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking?date=ABCD-09-19&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.759 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+00:06:52.063 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:06:52.070 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.071 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?date=2021-09-xyz19&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -176,7 +160,23 @@ Bad request: date and id empty
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.760 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.074 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 30
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+Bad request: date and id empty
+00:06:52.080 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.082 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking?date=2021-09-31&id=pepe%40pepe.pe1-0.1
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:06:52.086 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?date=2021-13-15&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -184,23 +184,23 @@ Bad request: date and id empty
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.768 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 25
+00:06:52.098 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 37
 1 < 500
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.767+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
-21:25:24.772 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 12
+{"timestamp":"2021-09-21T22:06:52.097+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
+00:06:52.102 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 16
 1 < 500
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.771+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
-21:25:24.774 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.778 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.779 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+{"timestamp":"2021-09-21T22:06:52.100+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
+00:06:52.104 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.107 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.110 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -208,20 +208,14 @@ Bad request: date and id empty
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.783 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
-1 < 200
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[]
-21:25:24.784 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 24
+00:06:52.112 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 30
 1 < 500
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.781+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
-21:25:24.787 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+{"timestamp":"2021-09-21T22:06:52.111+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
+00:06:52.114 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 66
@@ -229,18 +223,24 @@ Bad request: date and id empty
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"ARN","id":null,"origin":"MAD"}
+{"date":"2021-09-22","destination":"ARN","id":null,"origin":"MAD"}
 
-21:25:24.791 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.792 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 5
+00:06:52.115 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[]
+00:06:52.117 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.121 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 7
 1 < 400
 1 < Content-Type: text/plain;charset=UTF-8
 1 < Content-Length: 23
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
 User id should be valid
-21:25:24.793 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.796 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+00:06:52.124 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.127 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 73
@@ -250,8 +250,8 @@ User id should be valid
 1 > Accept-Encoding: gzip,deflate
 {"date":null,"destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":"MAD"}
 
-21:25:24.797 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.799 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+00:06:52.128 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.130 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 58
@@ -261,14 +261,7 @@ User id should be valid
 1 > Accept-Encoding: gzip,deflate
 {"date":null,"destination":"ARN","id":null,"origin":"MAD"}
 
-21:25:24.800 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
-1 < 400
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 21
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-Date format not valid
-21:25:24.802 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.136 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 84
@@ -278,44 +271,67 @@ Date format not valid
 1 > Accept-Encoding: gzip,deflate
 {"date":"20ABC20-04-08","destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":"MAD"}
 
-21:25:24.804 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4
+00:06:52.137 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 10
 1 < 400
 1 < Content-Type: text/plain;charset=UTF-8
 1 < Content-Length: 21
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
 Date format not valid
-21:25:24.805 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.808 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 52
+00:06:52.137 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 21
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+Date format not valid
+00:06:52.143 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.143 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.148 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"date":"2021-09-22","destination":null,"id":"pepe@pepe.pe1-0.1","origin":"MAD"}
+
+00:06:52.148 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"date":"2021-09-22","destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":null}
+
+00:06:52.153 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 82
 1 < 500
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.806+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
-21:25:24.809 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.810 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/booking
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 80
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":null,"id":"pepe@pepe.pe1-0.1","origin":"MAD"}
-
-21:25:24.812 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.813 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/booking
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 80
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":null}
-
-21:25:24.817 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+{"timestamp":"2021-09-21T22:06:52.152+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
+00:06:52.157 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 500
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.156+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/booking"}
+00:06:52.157 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.158 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 500
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.157+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/booking"}
+00:06:52.161 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.161 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.162 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 73
@@ -323,32 +339,9 @@ Date format not valid
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"ARN","id":"XYZXYZXYZ","origin":"MAD"}
+{"date":"2021-09-22","destination":"ARN","id":"XYZXYZXYZ","origin":"MAD"}
 
-21:25:24.818 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 71
-1 < 500
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.816+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
-21:25:24.820 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 10
-1 < 500
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.818+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/booking"}
-21:25:24.823 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.824 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.824 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 11
-1 < 500
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.822+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/booking"}
-21:25:24.828 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+00:06:52.165 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 82
@@ -356,10 +349,9 @@ Date format not valid
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"ABBA","id":"pepe@pepe.pe1-0.1","origin":"MAD"}
+{"date":"2021-09-22","destination":"ABBA","id":"pepe@pepe.pe1-0.1","origin":"MAD"}
 
-21:25:24.828 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.828 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+00:06:52.166 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/booking
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 84
@@ -367,60 +359,23 @@ Date format not valid
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
-{"date":"2021-09-21","destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":"MADRID"}
+{"date":"2021-09-22","destination":"ARN","id":"pepe@pepe.pe1-0.1","origin":"MADRID"}
 
-21:25:24.830 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > GET http://127.0.0.1:8900/booking
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-
-
-21:25:24.830 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 27
-1 < 400
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 21
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-Date format not valid
-21:25:24.832 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3
+00:06:52.169 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2
 1 < 409
 1 < Content-Type: text/plain;charset=UTF-8
 1 < Content-Length: 66
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
-21:25:24.832 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 3
+00:06:52.169 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2
 1 < 409
 1 < Content-Type: text/plain;charset=UTF-8
 1 < Content-Length: 66
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
-21:25:24.834 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
-1 < 400
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 30
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-Bad request: date and id empty
-21:25:24.835 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 18
-1 < 500
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.833+0000","status":500,"error":"Internal Server Error","message":"could not execute statement; SQL [n/a]; constraint [\"FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) ('XYZXYZXYZ')\"; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement","path":"/booking"}
-21:25:24.835 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:26
-Then status 200
-status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
-Bad request: date and id empty
-classpath:examples/bookings/unclearbooking.feature:26
-21:25:24.837 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.837 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.837 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.839 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.839 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.840 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.174 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.174 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.177 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -428,7 +383,55 @@ classpath:examples/bookings/unclearbooking.feature:26
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.840 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+00:06:52.177 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:8900/booking
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:06:52.180 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 30
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+Bad request: date and id empty
+00:06:52.181 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:26
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
+Bad request: date and id empty
+classpath:examples/bookings/unclearbooking.feature:26
+00:06:52.182 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[]
+00:06:52.182 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 500
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.181+0000","status":500,"error":"Internal Server Error","message":"could not execute statement; SQL [n/a]; constraint [\"FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) ('XYZXYZXYZ')\"; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement","path":"/booking"}
+00:06:52.183 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:56
+Then status 500
+status code was: 200, expected: 500, response time in milliseconds: 5, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1, response: 
+[]
+classpath:examples/bookings/unclearbooking.feature:56
+00:06:52.185 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.187 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.187 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 125
+1 < 500
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.185+0000","status":500,"error":"Internal Server Error","message":"Format date not valid","path":"/booking"}
+00:06:52.187 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.191 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/user?id=pepe%40pepe.pe1-0.1
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -436,19 +439,7 @@ classpath:examples/bookings/unclearbooking.feature:26
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.846 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 6
-1 < 200
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"email":"pepe@pepe.pe1","name":"pepe","id":"pepe@pepe.pe1-0.1","bookings":[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"}]}
-21:25:24.847 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 200
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[]
-21:25:24.847 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+00:06:52.191 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/user/all
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -456,13 +447,31 @@ classpath:examples/bookings/unclearbooking.feature:26
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.847 [pool-1-thread-5] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:56
-Then status 500
-status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&id=pepe%40pepe.pe1-0.1, response: 
-[]
-classpath:examples/bookings/unclearbooking.feature:56
-21:25:24.851 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.853 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.192 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.198 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"email":"pepe@pepe.pe1","name":"pepe","id":"pepe@pepe.pe1-0.1","bookings":[{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"},{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"},{"idBooking":"KQD-EUV-0.8488945011404617","idUser":"pepe@pepe.pe1-0.1","origin":"KQD","destination":"EUV","date":"2021-09-22"}]}
+00:06:52.205 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.210 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{"email":"pepe@pepe.pe1","name":"pepe","id":"pepe@pepe.pe1-0.1","bookings":[{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"},{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"},{"idBooking":"KQD-EUV-0.8488945011404617","idUser":"pepe@pepe.pe1-0.1","origin":"KQD","destination":"EUV","date":"2021-09-22"},{"idBooking":"CAC-YHP-0.6509458542108919","idUser":"pepe@pepe.pe1-0.1","origin":"CAC","destination":"YHP","date":"2021-09-22"}]},{"email":"pepe@pepe.pe2","name":"pepe","id":"pepe@pepe.pe1-0.2","bookings":[]},{"email":"ismael507@email.com","name":"Angle Abbott","id":"ismael507@email.com-0.3334483977546764","bookings":[{"idBooking":"ASR-MMR-0.4448515920323687","idUser":"ismael507@email.com-0.3334483977546764","origin":"ASR","destination":"MMR","date":"2021-09-21"}]},{"email":"ouida902@email.com","name":"Mrs. Xuan Reichel","id":"ouida902@email.com-0.7040218228989568","bookings":[]},{"email":"jordon893@email.com","name":"Tanya Greenfelder","id":"jordon893@email.com-0.9991404549854458","bookings":[{"idBooking":"TCR-PRI-0.6645788937119067","idUser":"jordon893@email.com-0.9991404549854458","origin":"TCR","destination":"PRI","date":"2021-09-21"}]},{"email":"IncorrectDateTestEmail@email.com","name":"Alejandrina Leuschke","id":"IncorrectDateTestEmail@email.com-0.552965395665666","bookings":[{"idBooking":"MAD-ARN-0.275751412266237","idUser":"IncorrectDateTestEmail@email.com-0.552965395665666","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}]},{"email":"jules684@email.com","name":"Gayle Nicolas","id":"jules684@email.com-0.39832311213823224","bookings":[]},{"email":"rickie365@email.com","name":"Lashawna Lemke","id":"rickie365@email.com-0.49065220791007613","bookings":[{"idBooking":"KHF-RJB-0.02857701766733378","idUser":"rickie365@email.com-0.49065220791007613","origin":"KHF","destination":"RJB","date":"2021-09-22"}]},{"email":"IncorrectDateTestEmail@email.com","name":"Dr. Carlota Yundt","id":"IncorrectDateTestEmail@email.com-0.03264507129100458","bookings":[{"idBooking":"MAD-ARN-0.5253351763383136","idUser":"IncorrectDateTestEmail@email.com-0.03264507129100458","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}]},{"email":"ria700@email.com","name":"Ed Ankunding","id":"ria700@email.com-0.31317943898929446","bookings":[]},{"email":"guy449@email.com","name":"Chris Lemke PhD","id":"guy449@email.com-0.7247712191432245","bookings":[{"idBooking":"FLC-IPR-0.8546619467702057","idUser":"guy449@email.com-0.7247712191432245","origin":"FLC","destination":"IPR","date":"2021-09-22"}]}]
+00:06:52.210 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 70
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"email":"IncorrectDateTestEmail@email.com","name":"Miss Isidro Funk"}
+
+00:06:52.215 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/user?id=*5q%2F
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -470,8 +479,39 @@ classpath:examples/bookings/unclearbooking.feature:56
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.853 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.857 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+00:06:52.219 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"email":"IncorrectDateTestEmail@email.com","name":"Miss Isidro Funk","id":"IncorrectDateTestEmail@email.com-0.9501626214807845","bookings":[]}
+00:06:52.219 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 14
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+User not found
+00:06:52.222 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 86
+1 < 400
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 21
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+Date format not valid
+00:06:52.223 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.224 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST http://127.0.0.1:8900/booking
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 119
+2 > Host: 127.0.0.1:8900
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+2 > Accept-Encoding: gzip,deflate
+{"date":"2020-02-03 XXX","destination":"ARN","id":"IncorrectDateTestEmail@email.com-0.9501626214807845","origin":"MAD"}
+
+00:06:52.226 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.226 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.226 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > GET http://127.0.0.1:8900/user
 1 > Host: 127.0.0.1:8900
 1 > Connection: Keep-Alive
@@ -479,39 +519,7 @@ classpath:examples/bookings/unclearbooking.feature:56
 1 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.861 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 8
-1 < 404
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 14
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-User not found
-21:25:24.864 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 500
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 11
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-ID erroneus
-21:25:24.864 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 17
-1 < 200
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{"email":"pepe@pepe.pe1","name":"pepe","id":"pepe@pepe.pe1-0.1","bookings":[{"idBooking":"LMA-OTJ-0.9894632923235571","idUser":"pepe@pepe.pe1-0.1","origin":"LMA","destination":"OTJ","date":"2021-09-21"},{"idBooking":"ISE-YQM-0.2723601674221372","idUser":"pepe@pepe.pe1-0.1","origin":"ISE","destination":"YQM","date":"2021-09-21"}]},{"email":"pepe@pepe.pe2","name":"pepe","id":"pepe@pepe.pe1-0.2","bookings":[]},{"email":"ismael507@email.com","name":"Angle Abbott","id":"ismael507@email.com-0.3334483977546764","bookings":[{"idBooking":"ASR-MMR-0.4448515920323687","idUser":"ismael507@email.com-0.3334483977546764","origin":"ASR","destination":"MMR","date":"2021-09-21"}]},{"email":"ouida902@email.com","name":"Mrs. Xuan Reichel","id":"ouida902@email.com-0.7040218228989568","bookings":[]},{"email":"jordon893@email.com","name":"Tanya Greenfelder","id":"jordon893@email.com-0.9991404549854458","bookings":[{"idBooking":"TCR-PRI-0.6645788937119067","idUser":"jordon893@email.com-0.9991404549854458","origin":"TCR","destination":"PRI","date":"2021-09-21"}]}]
-21:25:24.868 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.870 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.874 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/user
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 74
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-{"email":"IncorrectDateTestEmail@email.com","name":"Alejandrina Leuschke"}
-
-21:25:24.875 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.875 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.229 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/user
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 26
@@ -521,7 +529,7 @@ ID erroneus
 1 > Accept-Encoding: gzip,deflate
 {"email":"","name":"Karl"}
 
-21:25:24.877 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+00:06:52.229 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/user
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 34
@@ -531,7 +539,50 @@ ID erroneus
 1 > Accept-Encoding: gzip,deflate
 {"email":"my@email.com","name":""}
 
-21:25:24.879 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+00:06:52.230 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 500
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 11
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+ID erroneus
+00:06:52.231 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 201
+2 < Content-Type: application/json;charset=UTF-8
+2 < Transfer-Encoding: chunked
+2 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"idBooking":"MAD-ARN-0.3294213420245088","idUser":"IncorrectDateTestEmail@email.com-0.9501626214807845","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
+00:06:52.231 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 409
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 12
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+Check fields
+00:06:52.231 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 409
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 12
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+Check fields
+00:06:52.232 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:87
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
+{"idBooking":"MAD-ARN-0.3294213420245088","idUser":"IncorrectDateTestEmail@email.com-0.9501626214807845","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
+classpath:examples/bookings/unclearbooking.feature:87
+00:06:52.232 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"email":"felicidad764@email.com","name":"Zonia Gleichner"}
+
+00:06:52.235 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.235 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.235 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:52.237 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/user
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 22
@@ -541,33 +592,7 @@ ID erroneus
 1 > Accept-Encoding: gzip,deflate
 {"email":"","name":""}
 
-21:25:24.879 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
-1 < 409
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 12
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-Check fields
-21:25:24.882 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
-1 < 409
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 12
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-Check fields
-21:25:24.885 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.885 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 8
-1 < 409
-1 < Content-Type: text/plain;charset=UTF-8
-1 < Content-Length: 12
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-Check fields
-21:25:24.887 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 13
-1 < 201
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"email":"IncorrectDateTestEmail@email.com","name":"Alejandrina Leuschke","id":"IncorrectDateTestEmail@email.com-0.552965395665666","bookings":[]}
-21:25:24.888 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-21:25:24.888 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+00:06:52.237 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > POST http://127.0.0.1:8900/user
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 38
@@ -577,79 +602,54 @@ Check fields
 1 > Accept-Encoding: gzip,deflate
 {"email":"my.email.com","name":"Karl"}
 
-21:25:24.890 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-2 > POST http://127.0.0.1:8900/booking
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 118
-2 > Host: 127.0.0.1:8900
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-2 > Accept-Encoding: gzip,deflate
-{"date":"2020-02-03 XXX","destination":"ARN","id":"IncorrectDateTestEmail@email.com-0.552965395665666","origin":"MAD"}
-
-21:25:24.891 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/user
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 53
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-{"email":"jules684@email.com","name":"Gayle Nicolas"}
-
-21:25:24.894 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST http://127.0.0.1:8900/user
-1 > Host: 127.0.0.1:8900
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 > Accept-Encoding: gzip,deflate
-
-
-21:25:24.900 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
-2 < 201
-2 < Content-Type: application/json;charset=UTF-8
-2 < Transfer-Encoding: chunked
-2 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"idBooking":"MAD-ARN-0.275751412266237","idUser":"IncorrectDateTestEmail@email.com-0.552965395665666","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
-21:25:24.900 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookings/unclearbooking.feature:87
-Then status 400
-status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
-{"idBooking":"MAD-ARN-0.275751412266237","idUser":"IncorrectDateTestEmail@email.com-0.552965395665666","origin":"MAD","destination":"ARN","date":"2020-02-03 XXX"}
-classpath:examples/bookings/unclearbooking.feature:87
-21:25:24.901 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 13
-1 < 500
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.898+0000","status":500,"error":"Internal Server Error","message":"malformed email","path":"/user"}
-21:25:24.906 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 13
+00:06:52.238 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 6
 1 < 201
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"email":"jules684@email.com","name":"Gayle Nicolas","id":"jules684@email.com-0.39832311213823224","bookings":[]}
-21:25:24.907 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 13
-1 < 400
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-1 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 < Connection: close
-{"timestamp":"2021-09-21T19:25:24.903+0000","status":400,"error":"Bad Request","message":"Required request body is missing: public restservice.entity.User restservice.controller.UserController.createUser(restservice.api.UserRequest) throws java.lang.Exception","path":"/user"}
-21:25:24.909 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > GET http://127.0.0.1:8900/user?id=jules684%40email.com-0.39832311213823224
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"email":"felicidad764@email.com","name":"Zonia Gleichner","id":"felicidad764@email.com-0.7518141188488126","bookings":[]}
+00:06:52.240 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:8900/user
+1 > Host: 127.0.0.1:8900
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:06:52.242 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 409
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 12
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+Check fields
+00:06:52.244 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > GET http://127.0.0.1:8900/user?id=felicidad764%40email.com-0.7518141188488126
 2 > Host: 127.0.0.1:8900
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 > Accept-Encoding: gzip,deflate
 
 
-21:25:24.916 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 6
+00:06:52.244 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 400
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.243+0000","status":400,"error":"Bad Request","message":"Required request body is missing: public restservice.entity.User restservice.controller.UserController.createUser(restservice.api.UserRequest) throws java.lang.Exception","path":"/user"}
+00:06:52.246 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 500
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+1 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+1 < Connection: close
+{"timestamp":"2021-09-21T22:06:52.245+0000","status":500,"error":"Internal Server Error","message":"malformed email","path":"/user"}
+00:06:52.249 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
 2 < 200
 2 < Content-Type: application/json;charset=UTF-8
 2 < Transfer-Encoding: chunked
-2 < Date: Tue, 21 Sep 2021 19:25:24 GMT
-{"email":"jules684@email.com","name":"Gayle Nicolas","id":"jules684@email.com-0.39832311213823224","bookings":[]}
-21:25:25.566 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/bookings/bookings.feature
-21:25:25.609 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/bookings/unclearbooking.feature
-21:25:25.677 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/users/users.feature
+2 < Date: Tue, 21 Sep 2021 22:06:52 GMT
+{"email":"felicidad764@email.com","name":"Zonia Gleichner","id":"felicidad764@email.com-0.7518141188488126","bookings":[]}
+00:06:52.901 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/bookings/bookings.feature
+00:06:52.942 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/bookings/unclearbooking.feature
+00:06:53.014 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/users/users.feature

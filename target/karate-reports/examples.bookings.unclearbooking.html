@@ -30,13 +30,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-09-21 09:25:25 em</div>
+    <div>2021-09-22 12:06:52 fm</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:9]"><span>[1:9]</span> <span></span></a>
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get booking: No parameters</span></a>
           </div>
           <div class="nav-item failed">
             <a href="#[2:33]"><span>[2:33]</span> <span>Get booking: Incorrect date format: 2021-09-19xyz</span></a>
@@ -63,12 +63,12 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:9]</span>
-                <span class="scenario-name"></span>
+                <span class="scenario-name">Get booking: No parameters</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>5</span>
+              <span>ms:</span>&nbsp;<span>6</span>
             </div>
           </div>
           <div class="step-row">
@@ -100,7 +100,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">21:25:24.829 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">00:06:52.174 karate.env system property was: null 
 </div>   
 
   
@@ -300,7 +300,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.25">21:25:24.831 request:
+  <div class="preformatted" data-parent="0.25">00:06:52.177 request:
 1 &gt; GET http://127.0.0.1:8900/booking
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -308,11 +308,11 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.834 response time in milliseconds: 3
+00:06:52.181 response time in milliseconds: 3
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 30
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Bad request: date and id empty
 </div>   
@@ -343,7 +343,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="0.26">21:25:24.835 classpath:examples/bookings/unclearbooking.feature:26
+  <div class="preformatted" data-parent="0.26">00:06:52.182 classpath:examples/bookings/unclearbooking.feature:26
 Then status 200
 status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
 Bad request: date and id empty
@@ -424,7 +424,7 @@ classpath:examples/bookings/unclearbooking.feature:26
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>9</span>
+              <span>ms:</span>&nbsp;<span>8</span>
             </div>
           </div>
           <div class="step-row">
@@ -456,7 +456,7 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   
 
-  <div class="preformatted" data-parent="0.4">21:25:24.837 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">00:06:52.174 karate.env system property was: null 
 </div>   
 
   
@@ -701,7 +701,7 @@ classpath:examples/bookings/unclearbooking.feature:26
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -710,7 +710,7 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   
 
-  <div class="preformatted" data-parent="0.55">21:25:24.840 request:
+  <div class="preformatted" data-parent="0.55">00:06:52.177 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -718,11 +718,11 @@ classpath:examples/bookings/unclearbooking.feature:26
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.847 response time in milliseconds: 7
+00:06:52.182 response time in milliseconds: 5
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 []
 </div>   
 
@@ -752,9 +752,9 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   
 
-  <div class="preformatted" data-parent="0.56">21:25:24.847 classpath:examples/bookings/unclearbooking.feature:56
+  <div class="preformatted" data-parent="0.56">00:06:52.183 classpath:examples/bookings/unclearbooking.feature:56
 Then status 500
-status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
+status code was: 200, expected: 500, response time in milliseconds: 5, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
 []
 classpath:examples/bookings/unclearbooking.feature:56
 </div>   
@@ -805,7 +805,7 @@ classpath:examples/bookings/unclearbooking.feature:56
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>62</span>
+              <span>ms:</span>&nbsp;<span>45</span>
             </div>
           </div>
           <div class="step-row">
@@ -837,7 +837,7 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.4">21:25:24.838 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">00:06:52.186 karate.env system property was: null 
 </div>   
 
   
@@ -928,7 +928,7 @@ classpath:examples/bookings/unclearbooking.feature:56
         <span>*</span>&nbsp;<span>def user =</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">22</div>
   </div>
 
    
@@ -959,7 +959,7 @@ classpath:examples/bookings/unclearbooking.feature:56
         <span>Given</span>&nbsp;<span>path &#39;user&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1015,7 +1015,7 @@ classpath:examples/bookings/unclearbooking.feature:56
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -1024,22 +1024,22 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.78">21:25:24.874 request:
+  <div class="preformatted" data-parent="0.78">00:06:52.210 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 74
+1 &gt; Content-Length: 70
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;}
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Miss Isidro Funk&quot;}
 
-21:25:24.887 response time in milliseconds: 13
+00:06:52.219 response time in milliseconds: 9
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;bookings&quot;:[]}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Miss Isidro Funk&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;bookings&quot;:[]}
 </div>   
 
   
@@ -1094,7 +1094,7 @@ classpath:examples/bookings/unclearbooking.feature:56
         <span>*</span>&nbsp;<span>user.id = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1178,7 +1178,7 @@ classpath:examples/bookings/unclearbooking.feature:56
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -1187,22 +1187,22 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.86">21:25:24.893 request:
+  <div class="preformatted" data-parent="0.86">00:06:52.224 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 118
+2 &gt; Content-Length: 119
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2020-02-03 XXX&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2020-02-03 XXX&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.900 response time in milliseconds: 7
+00:06:52.231 response time in milliseconds: 7
 2 &lt; 201
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.3294213420245088&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 </div>   
 
   
@@ -1231,10 +1231,10 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.87">21:25:24.900 classpath:examples/bookings/unclearbooking.feature:87
+  <div class="preformatted" data-parent="0.87">00:06:52.232 classpath:examples/bookings/unclearbooking.feature:87
 Then status 400
 status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
-{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.3294213420245088&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.9501626214807845&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 classpath:examples/bookings/unclearbooking.feature:87
 </div>   
 

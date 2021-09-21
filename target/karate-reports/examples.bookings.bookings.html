@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-09-21 09:25:24 em</div>
+    <div>2021-09-22 12:06:52 fm</div>
   </div>        
 </div>
 
@@ -122,7 +122,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>592</span>
+              <span>ms:</span>&nbsp;<span>543</span>
             </div>
           </div>
           <div class="step-row">
@@ -154,7 +154,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">21:25:24.136 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">00:06:51.503 karate.env system property was: null 
 </div>   
 
   
@@ -230,7 +230,7 @@
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -367,7 +367,7 @@
         <span>And</span>&nbsp;<span>request { date: &quot;#(currentDate)&quot;, destination: &quot;#(r_destination)&quot;, id: &quot;#(existingUser.id)&quot;, origin: &quot;#(r_origin)&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">17</div>
   </div>
 
    
@@ -395,7 +395,7 @@
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">505</div>
+    <div class="time-cell passed">449</div>
   </div>
 
    
@@ -404,7 +404,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.22">21:25:24.669 request:
+  <div class="preformatted" data-parent="0.22">00:06:51.982 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 81
@@ -412,14 +412,14 @@
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}
 </div>   
 
   
@@ -467,7 +467,7 @@
         <span>And</span>&nbsp;<span>match response == { idBooking: &quot;#string&quot;, idUser: &quot;#(existingUser.id)&quot;, origin: &quot;#(r_origin)&quot;, destination: &quot;#(r_destination)&quot;, date: &quot;#? timeValidator(_)&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">21</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
@@ -593,7 +593,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -602,20 +602,20 @@
 
   
 
-  <div class="preformatted" data-parent="0.32">21:25:24.730 request:
-2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+  <div class="preformatted" data-parent="0.32">00:06:52.042 request:
+2 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.737 response time in milliseconds: 7
+00:06:52.051 response time in milliseconds: 9
 2 &lt; 200
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KQD-EUV-0.8488945011404617&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;KQD&quot;,&quot;destination&quot;:&quot;EUV&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </div>   
 
   
@@ -663,7 +663,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -691,7 +691,7 @@
         <span>And</span>&nbsp;<span>match response[*] contains</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -726,7 +726,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>590</span>
+              <span>ms:</span>&nbsp;<span>533</span>
             </div>
           </div>
           <div class="step-row">
@@ -758,7 +758,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">21:25:24.136 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">00:06:51.503 karate.env system property was: null 
 </div>   
 
   
@@ -862,7 +862,7 @@
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -925,7 +925,7 @@
         <span>*</span>&nbsp;<span>def user =</span>
       </div>
     </div>
-    <div class="time-cell passed">244</div>
+    <div class="time-cell passed">176</div>
   </div>
 
    
@@ -1012,7 +1012,7 @@
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">278</div>
+    <div class="time-cell passed">288</div>
   </div>
 
    
@@ -1021,22 +1021,22 @@
 
   
 
-  <div class="preformatted" data-parent="0.59">21:25:24.669 request:
+  <div class="preformatted" data-parent="0.59">00:06:51.982 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 58
+1 &gt; Content-Length: 53
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;}
+{&quot;email&quot;:&quot;guy449@email.com&quot;,&quot;name&quot;:&quot;Chris Lemke PhD&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;bookings&quot;:[]}
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;email&quot;:&quot;guy449@email.com&quot;,&quot;name&quot;:&quot;Chris Lemke PhD&quot;,&quot;id&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;bookings&quot;:[]}
 </div>   
 
   
@@ -1222,7 +1222,7 @@
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -1231,22 +1231,22 @@
 
   
 
-  <div class="preformatted" data-parent="0.79">21:25:24.713 request:
+  <div class="preformatted" data-parent="0.79">00:06:52.024 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 102
+2 &gt; Content-Length: 99
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;id&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;}
 
-21:25:24.718 response time in milliseconds: 5
+00:06:52.029 response time in milliseconds: 4
 2 &lt; 201
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+2 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+{&quot;idBooking&quot;:&quot;FLC-IPR-0.8546619467702057&quot;,&quot;idUser&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}
 </div>   
 
   
@@ -1301,7 +1301,7 @@
         <span>And</span>&nbsp;<span>match response == { idBooking: &quot;#string&quot;, idUser: #(user.id), origin: #(booking.origin), destination: #(booking.destination), date: &quot;#? timeValidator(_)&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -1436,20 +1436,20 @@
 
   
 
-  <div class="preformatted" data-parent="0.91">21:25:24.731 request:
-3 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=jordon893%40email.com-0.9991404549854458
+  <div class="preformatted" data-parent="0.91">00:06:52.041 request:
+3 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=guy449%40email.com-0.7247712191432245
 3 &gt; Host: 127.0.0.1:8900
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.737 response time in milliseconds: 6
+00:06:52.046 response time in milliseconds: 5
 3 &lt; 200
 3 &lt; Content-Type: application/json;charset=UTF-8
 3 &lt; Transfer-Encoding: chunked
-3 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+3 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;FLC-IPR-0.8546619467702057&quot;,&quot;idUser&quot;:&quot;guy449@email.com-0.7247712191432245&quot;,&quot;origin&quot;:&quot;FLC&quot;,&quot;destination&quot;:&quot;IPR&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </div>   
 
   
@@ -1497,7 +1497,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1560,7 +1560,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>577</span>
+              <span>ms:</span>&nbsp;<span>523</span>
             </div>
           </div>
           <div class="step-row">
@@ -1592,7 +1592,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.4">21:25:24.136 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">00:06:51.503 karate.env system property was: null 
 </div>   
 
   
@@ -1808,7 +1808,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">507</div>
+    <div class="time-cell passed">449</div>
   </div>
 
    
@@ -1817,7 +1817,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.111">21:25:24.669 request:
+  <div class="preformatted" data-parent="1.111">00:06:51.982 request:
 1 &gt; GET http://127.0.0.1:8900/booking?id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -1825,12 +1825,12 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </div>   
 
   
@@ -1878,7 +1878,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -1906,7 +1906,7 @@
         <span>And</span>&nbsp;<span>match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -1935,7 +1935,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>579</span>
+              <span>ms:</span>&nbsp;<span>522</span>
             </div>
           </div>
           <div class="step-row">
@@ -1967,7 +1967,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.4">21:25:24.136 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">00:06:51.503 karate.env system property was: null 
 </div>   
 
   
@@ -2099,7 +2099,7 @@
         <span>Given</span>&nbsp;<span>url apiURL</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2127,7 +2127,7 @@
         <span>Given</span>&nbsp;<span>params { id: null, date: #(currentDate) }</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -2183,7 +2183,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">510</div>
+    <div class="time-cell passed">452</div>
   </div>
 
    
@@ -2192,20 +2192,20 @@
 
   
 
-  <div class="preformatted" data-parent="2.111">21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21
+  <div class="preformatted" data-parent="2.111">00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;ASR-MMR-0.4448515920323687&quot;,&quot;idUser&quot;:&quot;ismael507@email.com-0.3334483977546764&quot;,&quot;origin&quot;:&quot;ASR&quot;,&quot;destination&quot;:&quot;MMR&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KHF-RJB-0.02857701766733378&quot;,&quot;idUser&quot;:&quot;rickie365@email.com-0.49065220791007613&quot;,&quot;origin&quot;:&quot;KHF&quot;,&quot;destination&quot;:&quot;RJB&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </div>   
 
   
@@ -2253,7 +2253,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -2281,7 +2281,7 @@
         <span>And</span>&nbsp;<span>match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -2310,7 +2310,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>578</span>
+              <span>ms:</span>&nbsp;<span>521</span>
             </div>
           </div>
           <div class="step-row">
@@ -2342,7 +2342,7 @@
 
   
 
-  <div class="preformatted" data-parent="3.4">21:25:24.136 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.4">00:06:51.503 karate.env system property was: null 
 </div>   
 
   
@@ -2446,7 +2446,7 @@
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2474,7 +2474,7 @@
         <span>Given</span>&nbsp;<span>url apiURL</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2558,7 +2558,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">506</div>
+    <div class="time-cell passed">449</div>
   </div>
 
    
@@ -2567,20 +2567,20 @@
 
   
 
-  <div class="preformatted" data-parent="3.111">21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+  <div class="preformatted" data-parent="3.111">00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </div>   
 
   
@@ -2628,7 +2628,7 @@
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -2685,7 +2685,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11</span>
+              <span>ms:</span>&nbsp;<span>25</span>
             </div>
           </div>
           <div class="step-row">
@@ -2708,7 +2708,7 @@
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -2717,7 +2717,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.4">21:25:24.736 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">00:06:52.049 karate.env system property was: null 
 </div>   
 
   
@@ -2737,7 +2737,7 @@
         <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2765,7 +2765,7 @@
         <span>*</span>&nbsp;<span>def currentDate = dataGenerator.getCurrentDate()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2793,7 +2793,7 @@
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2905,7 +2905,7 @@
         <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2933,7 +2933,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -2942,7 +2942,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.127">21:25:24.743 request:
+  <div class="preformatted" data-parent="1.127">00:06:52.065 request:
 1 &gt; GET http://127.0.0.1:8900/booking
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -2950,11 +2950,11 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.747 response time in milliseconds: 4
+00:06:52.074 response time in milliseconds: 9
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 30
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Bad request: date and id empty
 </div>   
@@ -3033,7 +3033,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>31</span>
+              <span>ms:</span>&nbsp;<span>138</span>
             </div>
           </div>
           <div class="step-row">
@@ -3056,7 +3056,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -3065,7 +3065,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="2.4">21:25:24.736 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">00:06:52.048 karate.env system property was: null 
 </div>   
 
   
@@ -3113,7 +3113,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def currentDate = dataGenerator.getCurrentDate()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3141,7 +3141,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3281,7 +3281,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">130</div>
   </div>
 
    
@@ -3290,7 +3290,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="2.127">21:25:24.743 request:
+  <div class="preformatted" data-parent="2.127">00:06:52.062 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=ABCD-09-19&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -3298,13 +3298,13 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.768 response time in milliseconds: 25
+00:06:52.187 response time in milliseconds: 125
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.767+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.185+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -3381,7 +3381,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>81</span>
+              <span>ms:</span>&nbsp;<span>49</span>
             </div>
           </div>
           <div class="step-row">
@@ -3404,7 +3404,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -3413,7 +3413,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="3.4">21:25:24.736 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.4">00:06:52.048 karate.env system property was: null 
 </div>   
 
   
@@ -3461,7 +3461,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def currentDate = dataGenerator.getCurrentDate()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3489,7 +3489,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3517,7 +3517,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3545,7 +3545,7 @@ Bad request: date and id empty
         <span>Given</span>&nbsp;<span>url apiURL</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3601,7 +3601,7 @@ Bad request: date and id empty
         <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3629,7 +3629,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">73</div>
+    <div class="time-cell passed">40</div>
   </div>
 
    
@@ -3638,7 +3638,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="3.127">21:25:24.747 request:
+  <div class="preformatted" data-parent="3.127">00:06:52.061 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-0ABC9-19&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -3646,13 +3646,13 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.818 response time in milliseconds: 71
+00:06:52.098 response time in milliseconds: 37
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.816+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.097+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -3729,7 +3729,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>35</span>
+              <span>ms:</span>&nbsp;<span>94</span>
             </div>
           </div>
           <div class="step-row">
@@ -3752,7 +3752,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -3761,7 +3761,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="4.4">21:25:24.748 karate.env system property was: null 
+  <div class="preformatted" data-parent="4.4">00:06:52.059 karate.env system property was: null 
 </div>   
 
   
@@ -3781,7 +3781,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3809,7 +3809,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def currentDate = dataGenerator.getCurrentDate()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3865,7 +3865,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3977,7 +3977,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">84</div>
   </div>
 
    
@@ -3986,7 +3986,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="4.127">21:25:24.760 request:
+  <div class="preformatted" data-parent="4.127">00:06:52.071 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-xyz19&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -3994,13 +3994,13 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.784 response time in milliseconds: 24
+00:06:52.153 response time in milliseconds: 82
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.781+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.152+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -4048,7 +4048,7 @@ Bad request: date and id empty
         <span>And</span>&nbsp;<span>match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -4077,7 +4077,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>60</span>
+              <span>ms:</span>&nbsp;<span>41</span>
             </div>
           </div>
           <div class="step-row">
@@ -4109,7 +4109,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="5.4">21:25:24.748 karate.env system property was: null 
+  <div class="preformatted" data-parent="5.4">00:06:52.071 karate.env system property was: null 
 </div>   
 
   
@@ -4185,7 +4185,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -4213,7 +4213,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -4325,7 +4325,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -4334,7 +4334,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="5.127">21:25:24.756 request:
+  <div class="preformatted" data-parent="5.127">00:06:52.082 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-31&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -4342,13 +4342,13 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.808 response time in milliseconds: 52
+00:06:52.113 response time in milliseconds: 30
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.806+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.111+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -4425,7 +4425,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>19</span>
+              <span>ms:</span>&nbsp;<span>22</span>
             </div>
           </div>
           <div class="step-row">
@@ -4448,7 +4448,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -4457,7 +4457,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="6.4">21:25:24.754 karate.env system property was: null 
+  <div class="preformatted" data-parent="6.4">00:06:52.080 karate.env system property was: null 
 </div>   
 
   
@@ -4673,7 +4673,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">18</div>
   </div>
 
    
@@ -4682,7 +4682,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="6.127">21:25:24.760 request:
+  <div class="preformatted" data-parent="6.127">00:06:52.086 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-13-15&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -4690,13 +4690,13 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.772 response time in milliseconds: 12
+00:06:52.102 response time in milliseconds: 16
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.771+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.100+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;Format date not valid&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -4773,7 +4773,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>10</span>
+              <span>ms:</span>&nbsp;<span>12</span>
             </div>
           </div>
           <div class="step-row">
@@ -4796,7 +4796,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -4805,7 +4805,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="7.4">21:25:24.774 karate.env system property was: null 
+  <div class="preformatted" data-parent="7.4">00:06:52.104 karate.env system property was: null 
 </div>   
 
   
@@ -4965,7 +4965,7 @@ Bad request: date and id empty
         <span>Given</span>&nbsp;<span>params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-19xyz&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -5030,7 +5030,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="7.127">21:25:24.779 request:
+  <div class="preformatted" data-parent="7.127">00:06:52.110 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -5038,11 +5038,11 @@ Bad request: date and id empty
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.784 response time in milliseconds: 4
+00:06:52.116 response time in milliseconds: 5
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 []
 </div>   
 
@@ -5091,7 +5091,7 @@ Bad request: date and id empty
         <span>And</span>&nbsp;<span>match response == &quot;#array&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -5120,7 +5120,7 @@ Bad request: date and id empty
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>14</span>
+              <span>ms:</span>&nbsp;<span>15</span>
             </div>
           </div>
           <div class="step-row">
@@ -5152,7 +5152,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="1.4">21:25:24.778 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">00:06:52.107 karate.env system property was: null 
 </div>   
 
   
@@ -5228,7 +5228,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -5256,7 +5256,7 @@ Bad request: date and id empty
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -5312,7 +5312,7 @@ Bad request: date and id empty
         <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -5368,7 +5368,7 @@ Bad request: date and id empty
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -5377,7 +5377,7 @@ Bad request: date and id empty
 
   
 
-  <div class="preformatted" data-parent="1.149">21:25:24.787 request:
+  <div class="preformatted" data-parent="1.149">00:06:52.114 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 66
@@ -5385,13 +5385,13 @@ Bad request: date and id empty
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.792 response time in milliseconds: 5
+00:06:52.121 response time in milliseconds: 7
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 23
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 User id should be valid
 </div>   
@@ -5470,7 +5470,7 @@ User id should be valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>9</span>
+              <span>ms:</span>&nbsp;<span>19</span>
             </div>
           </div>
           <div class="step-row">
@@ -5493,7 +5493,7 @@ User id should be valid
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -5502,7 +5502,7 @@ User id should be valid
 
   
 
-  <div class="preformatted" data-parent="2.4">21:25:24.791 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">00:06:52.117 karate.env system property was: null 
 </div>   
 
   
@@ -5522,7 +5522,7 @@ User id should be valid
         <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -5718,7 +5718,7 @@ User id should be valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -5727,7 +5727,7 @@ User id should be valid
 
   
 
-  <div class="preformatted" data-parent="2.149">21:25:24.796 request:
+  <div class="preformatted" data-parent="2.149">00:06:52.127 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 73
@@ -5737,11 +5737,11 @@ User id should be valid
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:null,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.800 response time in milliseconds: 4
+00:06:52.137 response time in milliseconds: 10
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Date format not valid
 </div>   
@@ -5820,7 +5820,7 @@ Date format not valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11</span>
+              <span>ms:</span>&nbsp;<span>13</span>
             </div>
           </div>
           <div class="step-row">
@@ -5852,7 +5852,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="3.4">21:25:24.794 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.4">00:06:52.124 karate.env system property was: null 
 </div>   
 
   
@@ -5872,7 +5872,7 @@ Date format not valid
         <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -5956,7 +5956,7 @@ Date format not valid
         <span>*</span>&nbsp;<span>def r_origin = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -6068,7 +6068,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -6077,7 +6077,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="3.149">21:25:24.800 request:
+  <div class="preformatted" data-parent="3.149">00:06:52.130 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
@@ -6087,11 +6087,11 @@ Date format not valid
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:null,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:null,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.804 response time in milliseconds: 4
+00:06:52.138 response time in milliseconds: 7
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Date format not valid
 </div>   
@@ -6170,7 +6170,7 @@ Date format not valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>34</span>
+              <span>ms:</span>&nbsp;<span>93</span>
             </div>
           </div>
           <div class="step-row">
@@ -6193,7 +6193,7 @@ Date format not valid
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -6202,7 +6202,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="4.4">21:25:24.797 karate.env system property was: null 
+  <div class="preformatted" data-parent="4.4">00:06:52.128 karate.env system property was: null 
 </div>   
 
   
@@ -6222,7 +6222,7 @@ Date format not valid
         <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -6278,7 +6278,7 @@ Date format not valid
         <span>*</span>&nbsp;<span>def r_destination = dataGenerator.getRandomAirport()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -6418,7 +6418,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell passed">88</div>
   </div>
 
    
@@ -6427,7 +6427,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="4.149">21:25:24.802 request:
+  <div class="preformatted" data-parent="4.149">00:06:52.136 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 84
@@ -6437,11 +6437,11 @@ Date format not valid
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:&quot;20ABC20-04-08&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.831 response time in milliseconds: 27
+00:06:52.223 response time in milliseconds: 86
 1 &lt; 400
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 21
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
 Date format not valid
 </div>   
@@ -6491,7 +6491,7 @@ Date format not valid
         <span>And</span>&nbsp;<span>match response contains &quot;Date format not valid&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -6520,7 +6520,7 @@ Date format not valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>15</span>
+              <span>ms:</span>&nbsp;<span>14</span>
             </div>
           </div>
           <div class="step-row">
@@ -6552,7 +6552,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="5.4">21:25:24.805 karate.env system property was: null 
+  <div class="preformatted" data-parent="5.4">00:06:52.144 karate.env system property was: null 
 </div>   
 
   
@@ -6740,7 +6740,7 @@ Date format not valid
         <span>And</span>&nbsp;<span>request { date: &quot;#(currentDate)&quot;, destination: null, id: &quot;#(existingUser.id)&quot;, origin: &quot;MAD&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -6768,7 +6768,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -6777,7 +6777,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="5.149">21:25:24.810 request:
+  <div class="preformatted" data-parent="5.149">00:06:52.148 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 80
@@ -6785,15 +6785,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:null,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:null,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.820 response time in milliseconds: 10
+00:06:52.158 response time in milliseconds: 10
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.818+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.157+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -6870,7 +6870,7 @@ Date format not valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>16</span>
+              <span>ms:</span>&nbsp;<span>13</span>
             </div>
           </div>
           <div class="step-row">
@@ -6902,7 +6902,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="6.4">21:25:24.809 karate.env system property was: null 
+  <div class="preformatted" data-parent="6.4">00:06:52.144 karate.env system property was: null 
 </div>   
 
   
@@ -7090,7 +7090,7 @@ Date format not valid
         <span>And</span>&nbsp;<span>request { date: &quot;#(currentDate)&quot;, destination: &quot;ARN&quot;, id: &quot;#(existingUser.id)&quot;, origin: null }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -7118,7 +7118,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -7127,7 +7127,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="6.149">21:25:24.813 request:
+  <div class="preformatted" data-parent="6.149">00:06:52.148 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 80
@@ -7135,15 +7135,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:null}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:null}
 
-21:25:24.824 response time in milliseconds: 11
+00:06:52.157 response time in milliseconds: 9
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.822+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.156+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -7220,7 +7220,7 @@ Date format not valid
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>23</span>
+              <span>ms:</span>&nbsp;<span>25</span>
             </div>
           </div>
           <div class="step-row">
@@ -7252,7 +7252,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="7.4">21:25:24.813 karate.env system property was: null 
+  <div class="preformatted" data-parent="7.4">00:06:52.158 karate.env system property was: null 
 </div>   
 
   
@@ -7468,7 +7468,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">19</div>
+    <div class="time-cell passed">22</div>
   </div>
 
    
@@ -7477,7 +7477,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="7.149">21:25:24.817 request:
+  <div class="preformatted" data-parent="7.149">00:06:52.162 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 73
@@ -7485,15 +7485,15 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;XYZXYZXYZ&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;XYZXYZXYZ&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.835 response time in milliseconds: 18
+00:06:52.182 response time in milliseconds: 20
 1 &lt; 500
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2021-09-21T19:25:24.833+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) (&#39;XYZXYZXYZ&#39;)\&quot;; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;,&quot;path&quot;:&quot;/booking&quot;}
+{&quot;timestamp&quot;:&quot;2021-09-21T22:06:52.181+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;FKTDE8EDPC976R2GJVN4RY5V9M7: PUBLIC.BOOKING FOREIGN KEY(ID_USER) REFERENCES PUBLIC.USER(ID) (&#39;XYZXYZXYZ&#39;)\&quot;; SQL statement:\ninsert into booking (date, destination, id_user, origin, id_booking) values (?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;,&quot;path&quot;:&quot;/booking&quot;}
 </div>   
 
   
@@ -7602,7 +7602,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="8.4">21:25:24.823 karate.env system property was: null 
+  <div class="preformatted" data-parent="8.4">00:06:52.161 karate.env system property was: null 
 </div>   
 
   
@@ -7790,7 +7790,7 @@ Date format not valid
         <span>And</span>&nbsp;<span>request { date: &quot;#(currentDate)&quot;, destination: &quot;ABBA&quot;, id: &quot;#(existingUser.id)&quot;, origin: &quot;MAD&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -7818,7 +7818,7 @@ Date format not valid
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -7827,7 +7827,7 @@ Date format not valid
 
   
 
-  <div class="preformatted" data-parent="8.149">21:25:24.829 request:
+  <div class="preformatted" data-parent="8.149">00:06:52.166 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 82
@@ -7835,13 +7835,13 @@ Date format not valid
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ABBA&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ABBA&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.832 response time in milliseconds: 3
+00:06:52.169 response time in milliseconds: 2
 1 &lt; 409
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 66
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
 </div>   
 
@@ -7890,7 +7890,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
         <span>And</span>&nbsp;<span>match response contains &quot;Origin or Destination is not a IATA code (Three Uppercase Letters)&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -7942,7 +7942,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -7951,7 +7951,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 
   
 
-  <div class="preformatted" data-parent="9.4">21:25:24.824 karate.env system property was: null 
+  <div class="preformatted" data-parent="9.4">00:06:52.161 karate.env system property was: null 
 </div>   
 
   
@@ -8167,7 +8167,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -8176,7 +8176,7 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 
   
 
-  <div class="preformatted" data-parent="9.149">21:25:24.829 request:
+  <div class="preformatted" data-parent="9.149">00:06:52.166 request:
 1 &gt; POST http://127.0.0.1:8900/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 84
@@ -8184,13 +8184,13 @@ Origin or Destination is not a IATA code (Three Uppercase Letters)
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MADRID&quot;}
+{&quot;date&quot;:&quot;2021-09-22&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;MADRID&quot;}
 
-21:25:24.832 response time in milliseconds: 3
+00:06:52.169 response time in milliseconds: 2
 1 &lt; 409
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 66
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
 Origin or Destination is not a IATA code (Three Uppercase Letters)
 </div>   
 

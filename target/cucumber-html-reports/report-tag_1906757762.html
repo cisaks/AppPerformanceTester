@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Ryanair Demo Application API Test</td>
-      <td>21 Sep 2021, 21:25</td>
+      <td>22 Sep 2021, 00:06</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="1633167100">1.633</td>
+          <td class="duration" data-value="1461140200">1.461</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.543</span>
+  <span class="lead-duration duration">0.488</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -224,7 +224,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: null }</span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -278,7 +278,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.506</span>
+  <span class="lead-duration duration">0.449</span>
 
 </div>
 
@@ -296,7 +296,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
+        <pre>00:06:51.982 request:
 1 &gt; GET http://127.0.0.1:8900/booking?id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
@@ -304,12 +304,12 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;LMA-OTJ-0.9894632923235571&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;LMA&quot;,&quot;destination&quot;:&quot;OTJ&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -356,7 +356,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == &quot;#array&quot;</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -383,7 +383,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -427,7 +427,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.545</span>
+  <span class="lead-duration duration">0.487</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -470,7 +470,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">params { id: null, date: #(currentDate) }</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -524,7 +524,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.509</span>
+  <span class="lead-duration duration">0.451</span>
 
 </div>
 
@@ -542,20 +542,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21
+        <pre>00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;},{&quot;idBooking&quot;:&quot;ASR-MMR-0.4448515920323687&quot;,&quot;idUser&quot;:&quot;ismael507@email.com-0.3334483977546764&quot;,&quot;origin&quot;:&quot;ASR&quot;,&quot;destination&quot;:&quot;MMR&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;},{&quot;idBooking&quot;:&quot;KHF-RJB-0.02857701766733378&quot;,&quot;idUser&quot;:&quot;rickie365@email.com-0.49065220791007613&quot;,&quot;origin&quot;:&quot;KHF&quot;,&quot;destination&quot;:&quot;RJB&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -602,7 +602,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == &quot;#array&quot;</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -673,7 +673,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.544</span>
+  <span class="lead-duration duration">0.485</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -716,7 +716,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: #(currentDate) }</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.017</span>
 
 </div>
 
@@ -770,7 +770,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.505</span>
+  <span class="lead-duration duration">0.449</span>
 
 </div>
 
@@ -788,20 +788,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
-1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=pepe%40pepe.pe1-0.1
+        <pre>00:06:51.982 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-22&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.705 response time in milliseconds: 34
+00:06:52.016 response time in milliseconds: 33
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;ISE-YQM-0.2723601674221372&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;ISE&quot;,&quot;destination&quot;:&quot;YQM&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+1 &lt; Date: Tue, 21 Sep 2021 22:06:52 GMT
+[{&quot;idBooking&quot;:&quot;CAC-YHP-0.6509458542108919&quot;,&quot;idUser&quot;:&quot;pepe@pepe.pe1-0.1&quot;,&quot;origin&quot;:&quot;CAC&quot;,&quot;destination&quot;:&quot;YHP&quot;,&quot;date&quot;:&quot;2021-09-22&quot;}]
 </pre>
       </div>
     </div>
@@ -848,7 +848,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == &quot;#array&quot;</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -875,7 +875,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match each response[*] == { date: &quot;#? timeValidator(_)&quot;, destination: &quot;#string&quot;, idBooking: &quot;#string&quot;, idUser: &quot;#string&quot;, origin: &quot;#string&quot; }</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 

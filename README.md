@@ -27,4 +27,4 @@
         * These scenarios are defined in `src\test\java\examples\bookings\unclearbooking.feature`.
         * You can ignore these scenarios by executing the tests with the command `mvn clean test "-Dkarate.options=--tags ~@UnclearBooking"`.
 
-* You can find the generated Cucumber Reports in HTML format in the folder `target\cucumber-html-reports`.
+* You can find Cucumber Reports in HTML format generated in the folder `target\cucumber-html-reports`.
