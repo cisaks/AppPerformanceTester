@@ -2,6 +2,7 @@ package helpers;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 import com.github.javafaker.Faker;
 
@@ -23,6 +24,16 @@ public class DataGenerator {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("uuuu-MM-dd");
         String date = dateFormatter.format(LocalDate.now()).toString();
         return date;
+    }
+
+    public static String getRandomAirport(){
+        String airport = "";
+        for (int i = 0; i < 3; i++) {
+            Random r = new Random();
+            int n = r.nextInt(26);
+            airport = airport + (char)(65 + n);
+        }
+        return airport;
     }
 
 }

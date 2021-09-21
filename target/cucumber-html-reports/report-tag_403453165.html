@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @CreateBooking</title>
+<title>Cucumber Reports  - Tag: @UnclearPostBookingIncorrectDate</title>
 
 </head>
 <body>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@CreateBooking</td>
-          <td      class="passed"    >19</td>
+          <td class="tagname">@UnclearPostBookingIncorrectDate</td>
+          <td      class="passed"    >10</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">19</td>
+          <td class="total">12</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="556632800">0.556</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="61762300">0.061</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,24 +171,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_664810544.html">examples/bookings/bookings.feature</a>
+      <a href="report-feature_1_1320077627.html">examples/bookings/unclearbooking.feature</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2966668124.html">@CreateBooking</a>
+       <a href="report-tag_403453165.html">@UnclearPostBookingIncorrectDate</a>
+       <a href="report-tag_1950021316.html">@UnclearBooking</a>
 </div>
 
 
-  <span class="lead-duration duration">0.556</span>
+  <span class="lead-duration duration">0.061</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Post booking: New user</span>
+  <span class="name">Post booking: Incorrect date format: 2021-09-19xyz</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -197,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,16 +217,47 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
-          <div class="comment indention">#Create user under which we can create a new booking</div>
+          <div class="comment indention">## Given the same API problem with incorrect date formats outlined in the above Scenario,</div>
+          <div class="comment indention">## this Scenario is to test the behaviour we would expect, if the API was able to also</div>
+          <div class="comment indention">## detect incorrect date formats of this type when creating new bookings.</div>
+          <div class="comment indention">##</div>
+          <div class="comment indention">## However, as is, this test case will FAIL!</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
 
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def user =</span>
 
-  <span class="lead-duration duration">0.244</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -244,8 +276,8 @@ $(document).ready(function() {
       </div>
       <div id="msg-3" class="collapse collapsable-details">
         <pre>{
-  email: #(dataGenerator.getRandomEmail()),
-  name: #(dataGenerator.getRandomName())        
+  email: &quot;IncorrectDateTestEmail@email.com&quot;,
+  name: &quot;#(dataGenerator.getRandomName())&quot;        
 }</pre>
       </div>
     </div>
@@ -265,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'user'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -319,7 +351,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.277</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -337,22 +369,22 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>21:25:24.669 request:
+        <pre>21:25:24.874 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 58
+1 &gt; Content-Length: 74
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;}
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;}
 
-21:25:24.705 response time in milliseconds: 34
+21:25:24.887 response time in milliseconds: 13
 1 &lt; 201
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;email&quot;:&quot;jordon893@email.com&quot;,&quot;name&quot;:&quot;Tanya Greenfelder&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;bookings&quot;:[]}
+{&quot;email&quot;:&quot;IncorrectDateTestEmail@email.com&quot;,&quot;name&quot;:&quot;Alejandrina Leuschke&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;bookings&quot;:[]}
 </pre>
       </div>
     </div>
@@ -400,7 +432,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">user.id = response.id</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -421,50 +453,6 @@ $(document).ready(function() {
 
       </div>
       <div class="step">
-          <div class="comment indention">#Define booking to be created</div>
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def booking =</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>{
-  date: #(currentDate),
-  destination: &quot;#(r_destination)&quot;,
-  id: &quot;#(user.id)&quot;,
-  origin: &quot;#(r_origin)&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-          <div class="comment indention">#Create booking</div>
 
 
 <div class="brief step-name-Given passed">
@@ -496,7 +484,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">request booking</span>
+  <span class="name">request { date: &quot;2020-02-03 XXX&quot;, destination: &quot;ARN&quot;, id: &quot;#(user.id)&quot;, origin: &quot;MAD&quot; }</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -525,7 +513,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method Post</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -539,26 +527,26 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>21:25:24.713 request:
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>21:25:24.893 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 102
+2 &gt; Content-Length: 118
 2 &gt; Host: 127.0.0.1:8900
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2021-09-21&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;id&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;}
+{&quot;date&quot;:&quot;2020-02-03 XXX&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;id&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;}
 
-21:25:24.718 response time in milliseconds: 5
+21:25:24.900 response time in milliseconds: 7
 2 &lt; 201
 2 &lt; Content-Type: application/json;charset=UTF-8
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 </pre>
       </div>
     </div>
@@ -574,9 +562,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 201</span>
+  <span class="name">status 400</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -587,143 +575,18 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>status</a>
       </div>
-      <div class="step">
-          <div class="comment indention">#Validate Schema</div>
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == { idBooking: &quot;#string&quot;, idUser: #(user.id), origin: #(booking.origin), destination: #(booking.destination), date: &quot;#? timeValidator(_)&quot; }</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+classpath:examples/bookings/unclearbooking.feature:87</pre>
       </div>
-      <div class="step">
-          <div class="comment indention">#Save booking ID</div>
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def bookingId = response.idBooking</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-          <div class="comment indention">#Get booking and verify that it was successfully created</div>
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: #(user.id), date: #(booking.date) }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'booking'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method Get</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
+    </div>
+  </div>
 
 
 
@@ -734,20 +597,11 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>21:25:24.731 request:
-3 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-21&amp;id=jordon893%40email.com-0.9991404549854458
-3 &gt; Host: 127.0.0.1:8900
-3 &gt; Connection: Keep-Alive
-3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-3 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.737 response time in milliseconds: 6
-3 &lt; 200
-3 &lt; Content-Type: application/json;charset=UTF-8
-3 &lt; Transfer-Encoding: chunked
-3 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-[{&quot;idBooking&quot;:&quot;TCR-PRI-0.6645788937119067&quot;,&quot;idUser&quot;:&quot;jordon893@email.com-0.9991404549854458&quot;,&quot;origin&quot;:&quot;TCR&quot;,&quot;destination&quot;:&quot;PRI&quot;,&quot;date&quot;:&quot;2021-09-21&quot;}]
+        <pre>21:25:24.900 classpath:examples/bookings/unclearbooking.feature:87
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
+{&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
+classpath:examples/bookings/unclearbooking.feature:87
 </pre>
       </div>
     </div>
@@ -763,9 +617,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains &quot;Date format not valid&quot;</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -779,76 +633,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;#array&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response[*] contains</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>{
-  date: &quot;#? timeValidator(_)&quot;,
-  destination: &quot;#(booking.destination)&quot;,
-  idBooking: &quot;#(bookingId)&quot;,
-  idUser: &quot;#(booking.id)&quot;,
-  origin: &quot;#(booking.origin)&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
 
 
 

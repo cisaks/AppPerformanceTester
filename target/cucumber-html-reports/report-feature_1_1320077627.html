@@ -41,10 +41,9 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Failures Overview</title>
+<title>Cucumber Reports  - Feature: examples/bookings/unclearbooking.feature</title>
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -55,7 +54,7 @@ $(document).ready(function() {
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
-        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -88,10 +87,67 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Failures Overview</h2>
-      <p>The following summary displays scenarios that failed.</p>
+    <h2>Feature Report</h2>
   </div>
 </div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">examples/bookings/unclearbooking.feature</td>
+          <td      class="passed"    >19</td>
+          <td      class="failed"    >3</td>
+          <td     class="skipped"   >4</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">26</td>
+
+          <td >0</td>
+          <td  class="failed"    >3</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="76420800">0.076</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
 
 
 <div class="container-fluid">
@@ -109,14 +165,116 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
 
-        <div class="elements">
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">examples/bookings/unclearbooking.feature</span>
+
+
+</div>
+
+        <div class="description indention">Unclear booking scenarios</div>
+
+        <div class="elements inner-level">
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_1320077627.html">examples/bookings/unclearbooking.feature</a>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>21:25:24.829 karate.env system property was: null 
+</pre>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -129,7 +287,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">0.005</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -142,14 +300,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -161,7 +319,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention">## Current API behaviour is to return status: 400, with message &quot;Bad request: date and id empty&quot;</div>
           <div class="comment indention">## when no User ID or Booking Date is provided</div>
@@ -250,10 +408,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details">
+      <div id="msg-6" class="collapse collapsable-details">
         <pre>21:25:24.831 request:
 1 &gt; GET http://127.0.0.1:8900/booking
 1 &gt; Host: 127.0.0.1:8900
@@ -299,10 +457,10 @@ Bad request: date and id empty
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
           <a>status</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
+      <div id="msg-7" class="collapse collapsable-details  in ">
         <pre>status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
 Bad request: date and id empty
 classpath:examples/bookings/unclearbooking.feature:26</pre>
@@ -315,10 +473,10 @@ classpath:examples/bookings/unclearbooking.feature:26</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
+      <div id="msg-8" class="collapse collapsable-details">
         <pre>21:25:24.835 classpath:examples/bookings/unclearbooking.feature:26
 Then status 200
 status code was: 400, expected: 200, response time in milliseconds: 3, url: http://127.0.0.1:8900/booking, response: 
@@ -402,10 +560,98 @@ classpath:examples/bookings/unclearbooking.feature:26
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_1320077627.html">examples/bookings/unclearbooking.feature</a>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>21:25:24.837 karate.env system property was: null 
+</pre>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -418,7 +664,7 @@ classpath:examples/bookings/unclearbooking.feature:26
   <span class="lead-duration duration">0.009</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -431,14 +677,14 @@ classpath:examples/bookings/unclearbooking.feature:26
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-12" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -450,7 +696,7 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention">## While the API tries to make sure that a strict date format is followed,</div>
           <div class="comment indention">## it fails to detect incorrect date formats of type 'yyyy-MM-ddXXX'</div>
@@ -545,10 +791,10 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-8" class="collapse collapsable-details">
+      <div id="msg-14" class="collapse collapsable-details">
         <pre>21:25:24.840 request:
 1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
@@ -593,10 +839,10 @@ classpath:examples/bookings/unclearbooking.feature:26
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
           <a>status</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details  in ">
+      <div id="msg-15" class="collapse collapsable-details  in ">
         <pre>status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
 []
 classpath:examples/bookings/unclearbooking.feature:56</pre>
@@ -609,10 +855,10 @@ classpath:examples/bookings/unclearbooking.feature:56</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
+      <div id="msg-16" class="collapse collapsable-details">
         <pre>21:25:24.847 classpath:examples/bookings/unclearbooking.feature:56
 Then status 500
 status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
@@ -669,10 +915,98 @@ classpath:examples/bookings/unclearbooking.feature:56
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_1320077627.html">examples/bookings/unclearbooking.feature</a>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>21:25:24.838 karate.env system property was: null 
+</pre>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -685,7 +1019,7 @@ classpath:examples/bookings/unclearbooking.feature:56
   <span class="lead-duration duration">0.061</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-20">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -698,14 +1032,14 @@ classpath:examples/bookings/unclearbooking.feature:56
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details  in ">
+  <div id="element-20" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -717,7 +1051,7 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention">## Given the same API problem with incorrect date formats outlined in the above Scenario,</div>
           <div class="comment indention">## this Scenario is to test the behaviour we would expect, if the API was able to also</div>
@@ -771,10 +1105,10 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
+      <div id="msg-22" class="collapse collapsable-details">
         <pre>{
   email: &quot;IncorrectDateTestEmail@email.com&quot;,
   name: &quot;#(dataGenerator.getRandomName())&quot;        
@@ -865,10 +1199,10 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
           <a>Doc string</a>
       </div>
-      <div id="msg-14" class="collapse collapsable-details">
+      <div id="msg-23" class="collapse collapsable-details">
         <pre>21:25:24.874 request:
 1 &gt; POST http://127.0.0.1:8900/user
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1027,10 +1361,10 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
           <a>Doc string</a>
       </div>
-      <div id="msg-15" class="collapse collapsable-details">
+      <div id="msg-24" class="collapse collapsable-details">
         <pre>21:25:24.893 request:
 2 &gt; POST http://127.0.0.1:8900/booking
 2 &gt; Content-Type: application/json; charset=UTF-8
@@ -1077,10 +1411,10 @@ classpath:examples/bookings/unclearbooking.feature:56
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
           <a>status</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
+      <div id="msg-25" class="collapse collapsable-details  in ">
         <pre>status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
 {&quot;idBooking&quot;:&quot;MAD-ARN-0.275751412266237&quot;,&quot;idUser&quot;:&quot;IncorrectDateTestEmail@email.com-0.552965395665666&quot;,&quot;origin&quot;:&quot;MAD&quot;,&quot;destination&quot;:&quot;ARN&quot;,&quot;date&quot;:&quot;2020-02-03 XXX&quot;}
 classpath:examples/bookings/unclearbooking.feature:87</pre>
@@ -1093,10 +1427,10 @@ classpath:examples/bookings/unclearbooking.feature:87</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
           <a>Doc string</a>
       </div>
-      <div id="msg-17" class="collapse collapsable-details">
+      <div id="msg-26" class="collapse collapsable-details">
         <pre>21:25:24.900 classpath:examples/bookings/unclearbooking.feature:87
 Then status 400
 status code was: 201, expected: 400, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking, response: 
@@ -1153,6 +1487,7 @@ classpath:examples/bookings/unclearbooking.feature:87
 
         </div>
 
+      </div>
     </div>
   </div>
 </div>

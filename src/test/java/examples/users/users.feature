@@ -31,7 +31,7 @@ Scenario: Get all users
   ## each time you run the API tests (we're doing API tests, not database tests).
   ## It would probably be sufficient to validate the schema for post/get user and booking.
   And match each response == { email: "#string", name: "#string", id: "#string", bookings: "#array" }
-  * def timeValidator = read('classpath:helpers/timeValidator.js')
+  #* def timeValidator = read('classpath:helpers/timeValidator.js')
   And match each response..bookings[*] == 
   """
     {
@@ -39,7 +39,7 @@ Scenario: Get all users
       idUser: "#string",
       origin: "#string",
       destination: "#string",
-      date: "#? timeValidator(_)"
+      date: "#string"
     }
   """
 

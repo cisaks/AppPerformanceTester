@@ -22,15 +22,15 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">8</div>
-      <div id="nav-fail" class="bg-danger">2</div>
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">4</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Tags</div>
   </div>         
   <div id="nav-date">
-    <div>2021-09-21 12:31:44 fm</div>
+    <div>2021-09-21 09:25:25 em</div>
   </div>        
 </div>
 
@@ -48,15 +48,19 @@
               <th classapend="passed">CreateUser</th>
               <th classapend="passed">CreateUserNegative</th>
               <th classapend="passed">GetAllUsers</th>
-              <th classapend="failed">GetBooking</th>
+              <th classapend="passed">GetBooking</th>
               <th classapend="passed">GetUser</th>
               <th classapend="passed">GetUserNegative</th>
-              <th classapend="failed">NegativeGetBooking</th>
+              <th classapend="passed">NegativeGetBooking</th>
               <th classapend="passed">NegativePostBooking</th>
+              <th classapend="failed">UnclearBooking</th>
+              <th classapend="failed">UnclearGetBookingIncorrectDate</th>
+              <th classapend="failed">UnclearGetBookingNullParameters</th>
+              <th classapend="failed">UnclearPostBookingIncorrectDate</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="failed">
+            <tr class="passed">
               <td class="feature-cell">
                 <a href="examples.bookings.bookings.html">examples/bookings/bookings.feature</a>
               </td>
@@ -65,11 +69,34 @@
               <td classapend="passed"></td>
               <td classapend="passed"></td>
               <td classapend="passed"></td>
-              <td classapend="failed">X</td>
-              <td classapend="passed"></td>
-              <td classapend="passed"></td>
-              <td classapend="failed">X</td>
               <td classapend="passed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed">X</td>
+              <td classapend="passed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+            </tr>
+            <tr class="failed">
+              <td class="feature-cell">
+                <a href="examples.bookings.unclearbooking.html">examples/bookings/unclearbooking.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="failed">X</td>
+              <td classapend="failed">X</td>
+              <td classapend="failed">X</td>
+              <td classapend="failed">X</td>
             </tr>
             <tr class="passed">
               <td class="feature-cell">
@@ -83,6 +110,10 @@
               <td classapend="passed"></td>
               <td classapend="passed">X</td>
               <td classapend="passed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
               <td classapend="passed"></td>
               <td classapend="passed"></td>
             </tr>            

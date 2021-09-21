@@ -9,8 +9,4 @@ class BookingsRunner {
         return Karate.run("bookings").relativeTo(getClass());
     }
 
-    // @Karate.Test
-    // Karate testBookingsEdge() {
-    //     return Karate.run("bookingsEdge").relativeTo(getClass());
-    // }
 }

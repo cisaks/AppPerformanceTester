@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @GetUserNegative</title>
+<title>Cucumber Reports  - Tag: @UnclearGetBookingIncorrectDate</title>
 
 </head>
 <body>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@GetUserNegative</td>
-          <td      class="passed"    >10</td>
+          <td class="tagname">@UnclearGetBookingIncorrectDate</td>
+          <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">10</td>
+          <td class="total">5</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
 
-          <td class="duration" data-value="22342000">0.022</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="9010800">0.009</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,24 +171,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_2622058114.html">examples/users/users.feature</a>
+      <a href="report-feature_1_1320077627.html">examples/bookings/unclearbooking.feature</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_320742197.html">@GetUserNegative</a>
+       <a href="report-tag_1950021316.html">@UnclearBooking</a>
+       <a href="report-tag_3920172027.html">@UnclearGetBookingIncorrectDate</a>
 </div>
 
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.009</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get User: &quot;Indorrect user id&quot;</span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get booking: Incorrect date format: 2021-09-19xyz</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -197,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,13 +217,32 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
+          <div class="comment indention">## While the API tries to make sure that a strict date format is followed,</div>
+          <div class="comment indention">## it fails to detect incorrect date formats of type 'yyyy-MM-ddXXX'</div>
+          <div class="comment indention">## (Where yyyy=year, MM=month, dd=day and XXX=Any number of characters)</div>
+          <div class="comment indention">##</div>
+          <div class="comment indention">## This creates a problem where bookings with this incorrect date format</div>
+          <div class="comment indention">## don't show up with the Get /booking method for a given date if the user</div>
+          <div class="comment indention">## had a typo at the end of their date, unless you Get the bookings with</div>
+          <div class="comment indention">## that exact same typo.</div>
+          <div class="comment indention">##</div>
+          <div class="comment indention">## Additionally, if bookings are created with an incorrect date format</div>
+          <div class="comment indention">## then subsequent tests that gets all bookings for a particular userID</div>
+          <div class="comment indention">## that has bookings with incorrect date format, then the @GetBooking</div>
+          <div class="comment indention">## test will fail since it uses a more robust function for detecting</div>
+          <div class="comment indention">## incorrect date formats.</div>
+          <div class="comment indention">##</div>
+          <div class="comment indention">## This Scenario is to test the behaviour we would expect, if the API</div>
+          <div class="comment indention">## was able to also detect incorrect date formats of this type.</div>
+          <div class="comment indention">##</div>
+          <div class="comment indention">## However, as is, this test case will FAIL!</div>
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">params { id: &quot;*5q/&quot; }</span>
+  <span class="name">params { id: &quot;#(existingUser.id)&quot;, date: &quot;2021-09-19xyz&quot; }</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -249,7 +269,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path 'user'</span>
+  <span class="name">path 'booking'</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -276,9 +296,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">method get</span>
+  <span class="name">method Get</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -296,20 +316,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>21:25:24.853 request:
-1 &gt; GET http://127.0.0.1:8900/user?id=*5q%2F
+        <pre>21:25:24.840 request:
+1 &gt; GET http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1
 1 &gt; Host: 127.0.0.1:8900
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:25:24.861 response time in milliseconds: 8
-1 &lt; 404
-1 &lt; Content-Type: text/plain;charset=UTF-8
-1 &lt; Content-Length: 14
+21:25:24.847 response time in milliseconds: 7
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
 1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-User not found
+[]
 </pre>
       </div>
     </div>
@@ -325,227 +345,7 @@ User not found
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 404</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;User not found&quot;</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2_2622058114.html">examples/users/users.feature</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_320742197.html">@GetUserNegative</a>
-</div>
-
-
-  <span class="lead-duration duration">0.010</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get User: &quot;No user id&quot;</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-4" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">params { id: null }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path 'user'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method get</span>
-
-  <span class="lead-duration duration">0.009</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>21:25:24.857 request:
-1 &gt; GET http://127.0.0.1:8900/user
-1 &gt; Host: 127.0.0.1:8900
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-21:25:24.864 response time in milliseconds: 7
-1 &lt; 500
-1 &lt; Content-Type: text/plain;charset=UTF-8
-1 &lt; Content-Length: 11
-1 &lt; Date: Tue, 21 Sep 2021 19:25:24 GMT
-1 &lt; Connection: close
-ID erroneus
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 500</span>
 
@@ -558,9 +358,37 @@ ID erroneus
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>status</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
+[]
+classpath:examples/bookings/unclearbooking.feature:56</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>21:25:24.847 classpath:examples/bookings/unclearbooking.feature:56
+Then status 500
+status code was: 200, expected: 500, response time in milliseconds: 7, url: http://127.0.0.1:8900/booking?date=2021-09-19xyz&amp;id=pepe%40pepe.pe1-0.1, response: 
+[]
+classpath:examples/bookings/unclearbooking.feature:56
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -572,9 +400,9 @@ ID erroneus
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">match response == &quot;ID erroneus&quot;</span>
+  <span class="name">match response == {timestamp:&quot;#string&quot;, status:500, error:&quot;Internal Server Error&quot;, message:&quot;Format date not valid&quot;, path: &quot;/booking&quot;}</span>
 
   <span class="lead-duration duration">0.000</span>
 
